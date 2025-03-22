@@ -1,0 +1,6 @@
+pytest==7.4.3
+rich==13.7.0
+django==5.0.1
+djangorestframework==3.14.0
+django-crispy-forms==2.1
+python-dotenv==1.0.0 

@@ -1,0 +1,6 @@
+click==8.1.7
+rich==13.7.0
+prompt-toolkit==3.0.43
+psutil==5.9.8
+pyyaml==6.0.1
+pytest==7.4.3 

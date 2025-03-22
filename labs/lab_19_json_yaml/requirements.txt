@@ -1,0 +1,5 @@
+pytest==7.4.3
+rich==13.7.0
+pyyaml==6.0.1
+jsonschema==4.21.1
+python-dotenv==1.0.0 

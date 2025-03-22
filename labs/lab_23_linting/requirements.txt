@@ -1,0 +1,8 @@
+pytest==7.4.3
+rich==13.7.0
+black==23.12.1
+flake8==7.0.0
+pre-commit==3.6.0
+isort==5.13.2
+mypy==1.8.0
+pylint==3.0.3 

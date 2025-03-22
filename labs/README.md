@@ -2,11 +2,22 @@
 
 This directory contains a series of hands-on labs designed to help you learn Python programming from basics to advanced concepts. Each lab focuses on specific topics and includes exercises, examples, and tests.
 
+## Lab Index
+
+| Lab Number | Topic | Description | Difficulty | Prerequisites |
+|------------|-------|-------------|------------|--------------|
+| [Lab 01](lab_01_basic_syntax) | Basic Python Syntax and Data Types | Introduction to variables, data types, and basic operations | Beginner | None |
+| [Lab 02](lab_02_control_structures) | Control Structures | Working with if/else statements and loops | Beginner | Lab 01 |
+| [Lab 03](lab_03_functions) | Functions and Modules | Creating and using functions, working with modules | Intermediate | Lab 02 |
+| [Lab 04](lab_04_oop) | Object-Oriented Programming | Classes, objects, inheritance, and polymorphism | Intermediate | Lab 03 |
+| [Lab 05](lab_05_file_handling) | File Handling and Data Processing | Working with files and data processing | Intermediate | Lab 04 |
+| [Lab 06](lab_06_error_handling) | Error Handling and Debugging | Exception handling and debugging techniques | Advanced | Lab 05 |
+| [Lab 07](lab_07_advanced_topics) | Advanced Topics | Decorators, generators, and advanced Python features | Advanced | Lab 06 |
+
 ## Lab Structure
 
 Each lab is organized in its own directory with the following structure:
-```
-lab_XX_topic/
+```lab_XX_topic/
 ├── README.md           # Lab instructions and requirements
 ├── exercises/          # Exercise files
 ├── solutions/          # Solution files
