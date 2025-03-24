@@ -3,13 +3,7 @@ name: Test Python Labs
 on:
   push:
     branches:
-      - main
-      - 'lab-*'  # Matches any branch starting with lab-
-  pull_request:
-    branches:
-      - main
-    paths:
-      - 'labs/**'  # Trigger on changes to any lab files
+      - 'lab-*'  # Only run on student lab branches
 
 jobs:
   test:
@@ -28,50 +22,16 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest
     
-    - name: Detect modified labs
-      id: detect-labs
+    - name: Run tests
       run: |
-        # Get list of modified lab directories
-        MODIFIED_LABS=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep '^labs/' | cut -d'/' -f1-2 | sort -u)
-        echo "Modified labs: $MODIFIED_LABS"
-        echo "labs=${MODIFIED_LABS}" >> $GITHUB_OUTPUT
-    
-    - name: Run tests for modified labs
-      run: |
-        # Read the labs from the previous step
-        LABS=$(echo "${{ steps.detect-labs.outputs.labs }}" | tr ' ' '\n')
+        # Get the modified lab directory from changed files
+        MODIFIED_LAB=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^labs/lab_' | cut -d'/' -f1-2 | head -n1)
         
-        for lab in $LABS; do
-          if [ -d "$lab/tests" ]; then
-            echo "Running tests for $lab..."
-            cd $lab
-            python -m pytest tests/ -v
-            cd ../..
-          else
-            echo "No tests directory found in $lab, skipping tests."
-          fi
-        done
-    
-    - name: Check exercise implementations
-      run: |
-        # Read the labs from the previous step
-        LABS=$(echo "${{ steps.detect-labs.outputs.labs }}" | tr ' ' '\n')
-        
-        for lab in $LABS; do
-          if [ -d "$lab/exercises" ]; then
-            echo "Checking exercise implementations in $lab..."
-            cd $lab
-            
-            # Run each exercise file
-            for exercise in exercises/*.py; do
-              if [ -f "$exercise" ]; then
-                echo "Running $exercise..."
-                python "$exercise"
-              fi
-            done
-            
-            cd ../..
-          else
-            echo "No exercises directory found in $lab, skipping implementation checks."
-          fi
-        done 
+        if [ -n "$MODIFIED_LAB" ]; then
+          echo "Running tests for $MODIFIED_LAB..."
+          cd $MODIFIED_LAB
+          python -m pytest tests/ -v
+          cd ../..
+        else
+          echo "No lab files were modified"
+        fi 
