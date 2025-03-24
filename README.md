@@ -45,7 +45,6 @@ You can follow this course in **two ways**:
 
 
 # Tasks
-
 ## Go to Folder general-exercises - start coding ! 
 
 
