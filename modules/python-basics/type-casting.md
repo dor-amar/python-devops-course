@@ -41,8 +41,6 @@ This is when Python automatically converts one type to another during an operati
 ### **1. Converting Strings to Integers and Floats**
 
 ```python
-python
-Copy code
 # String to Integer
 num = int("123")
 print(num)  # Output: 123
@@ -56,8 +54,6 @@ print(num_float)  # Output: 123.45
 ### **2. Converting Numbers to Strings**
 
 ```python
-python
-Copy code
 # Integer to String
 num_str = str(123)
 print(num_str)  # Output: "123"
@@ -71,8 +67,6 @@ print(num_str_float)  # Output: "123.45"
 ### **3. Converting Between Collections**
 
 ```python
-python
-Copy code
 # Tuple to List
 my_tuple = (1, 2, 3)
 my_list = list(my_tuple)
@@ -93,8 +87,6 @@ print(my_set)  # Output: {1, 2, 3}
 ### **4. Converting to Boolean**
 
 ```python
-python
-Copy code
 # Integer to Boolean
 print(bool(0))    # Output: False
 print(bool(10))   # Output: True
@@ -108,8 +100,6 @@ print(bool("Hi")) # Output: True
 ### **5. Implicit Type Casting**
 
 ```python
-python
-Copy code
 # Python automatically converts int to float
 num = 10
 result = num + 3.5
