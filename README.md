@@ -29,7 +29,9 @@ You can follow this course in **two ways**:
 | 13 | Python Basics | [List, Tuple, Set](modules/python-basics/list.md) |  | | |
 | 14 | Python Basics | [Project - Student Management System](modules/python-basics/in-module-labs/lab_03.md) |  | | |
 | 15 | Python Basics | [Basics of Dictionaries](modules/python-basics/dictionary.md) | [Lab 🧪](modules/python-basics/in-module-labs/lab_04.md) | | |
-| 16 | Python Basics | [Basics of Dictionaries](modules/python-basics/dictionary-vs-json.md) | [Lab 🧪](modules/python-basics/in-module-labs/lab_02.md) | | |
+| 16 | Python Basics | [Dictionaries vs JSON](modules/python-basics/dictionary-vs-json.md) | [Lab 🧪](modules/python-basics/in-module-labs/lab_02.md) | | |
+| 17 |  | [Exception Handling](modules/python-basics/exception-handling.md) | [Lab 🧪](modules/python-basics/in-module-labs/lab_05.md) | | |
+| 18 |  | [File Operations](modules/python-basics/file-operations.md) | [Lab 🧪](modules/python-basics/in-module-labs/lab_06.md) | | |
 
 
 
@@ -44,7 +46,7 @@ You can follow this course in **two ways**:
 | 4 | Lists and Tuples | Working with lists and tuples, list operations | [Lists and Tuples Lab](labs/lab_04_lists_tuples) |
 | 5 | Strings | String manipulation, formatting, and methods | [Strings Lab](labs/lab_05_strings) |
 | 6 | Sets | Set operations, unique collections | [Sets Lab](labs/lab_06_sets) |
-| 7 | Dictionaries | Key-value pairs, dictionary operations | [Dictionaries Lab](labs/lab_07_dictionaries) |
+| 7 | Dictionaries | Key-value pairs, dictionary operations | [Dictionaries Lab](labs/lab_12_dict) |
 | 8 | File Operations | Reading and writing files, file handling | [File Operations Lab](labs/lab_08_files) |
 | 9 | Error Handling | Try/except blocks, error management | [Error Handling Lab](labs/lab_09_error_handling) |
 | 10 | Modules and Packages | Importing modules, creating packages | [Modules and Packages Lab](labs/lab_10_modules) |
