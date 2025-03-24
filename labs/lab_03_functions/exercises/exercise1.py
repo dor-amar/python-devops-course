@@ -10,6 +10,7 @@ In this exercise, you will:
 from typing import Any, Dict, List, Optional, Union
 
 def calculate_total(*args: float) -> float:
+    print("hello")
     """
     Calculate the total of variable number of arguments
     Args:
