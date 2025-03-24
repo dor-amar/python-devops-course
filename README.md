@@ -34,12 +34,32 @@ You can follow this course in **two ways**:
 
 
 
-# Python for DevOps Engineers - Just Labs and Challanges
+# Python for DevOps Engineers - Just Labs
 
-| # | Topic | Lab | Project |
-|---|-------|-----|--------|
-| 1 | **Basic Syntax** | |  |
-
+| # | Lab Name | Description | Directory |
+|---|----------|-------------|-----------|
+| 1 | Basic Syntax | Variables, data types, operators, and basic Python syntax | [Basic Syntax Lab](labs/lab_01_basic_syntax) |
+| 2 | Control Structures | If/else statements, loops, and control structures | [Control Structures Lab](labs/lab_02_control_structures) |
+| 3 | Functions | Function definition, parameters, return values, and scope | [Functions Lab](labs/lab_03_functions) |
+| 4 | Lists and Tuples | Working with lists and tuples, list operations | [Lists and Tuples Lab](labs/lab_04_lists_tuples) |
+| 5 | Strings | String manipulation, formatting, and methods | [Strings Lab](labs/lab_05_strings) |
+| 6 | Sets | Set operations, unique collections | [Sets Lab](labs/lab_06_sets) |
+| 7 | Dictionaries | Key-value pairs, dictionary operations | [Dictionaries Lab](labs/lab_07_dictionaries) |
+| 8 | File Operations | Reading and writing files, file handling | [File Operations Lab](labs/lab_08_files) |
+| 9 | Error Handling | Try/except blocks, error management | [Error Handling Lab](labs/lab_09_error_handling) |
+| 10 | Modules and Packages | Importing modules, creating packages | [Modules and Packages Lab](labs/lab_10_modules) |
+| 11 | Object-Oriented Programming | Classes, objects, inheritance | [OOP Lab](labs/lab_11_oop) |
+| 12 | Regular Expressions | Pattern matching and text processing | [Regex Lab](labs/lab_12_regex) |
+| 13 | Working with APIs | HTTP requests, API integration | [APIs Lab](labs/lab_13_apis) |
+| 14 | Database Operations | SQLite, database CRUD operations | [Database Lab](labs/lab_14_database) |
+| 15 | Testing | Unit testing, pytest framework | [Testing Lab](labs/lab_15_testing) |
+| 16 | Git Operations | Working with Git in Python | [Git Lab](labs/lab_16_git) |
+| 19 | AWS Operations | AWS services integration | [AWS Lab](labs/lab_19_aws) |
+| 20 | Monitoring and Logging | System monitoring and log management | [Monitoring Lab](labs/lab_23_monitoring) |
+| 21 | Configuration Management | Infrastructure as Code | [Config Management Lab](labs/lab_24_config) |
+| 22 | Security Operations | Security automation and management | [Security Lab](labs/lab_25_security) |
+| 23 | Network Operations | Network automation and management | [Network Lab](labs/lab_26_network) |
+| 24 | Loops and Iterations | Advanced loop patterns and iterations | [Loops Lab](labs/lab_27_loops) |
 
 ---
 
@@ -56,3 +76,11 @@ Clone this repository to start learning:
 ```bash
 git clone https://github.com/your-repo/python-for-devops.git
 cd python-for-devops
+
+```
+
+
+</rewritten_file>
+
+
+

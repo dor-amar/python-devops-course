@@ -16,6 +16,8 @@ jobs:
     # Step 1: Checkout the code
     - name: Checkout Repository
       uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Fetch all history for all branches and tags
 
     # Step 2: Set up Python
     - name: Set up Python 3.10
@@ -39,7 +41,13 @@ jobs:
     - name: Run Tests
       run: |
         # Get modified lab directories
-        MODIFIED_LABS=$(git diff --name-only HEAD~1 HEAD | grep '^labs/lab_' | cut -d'/' -f1-2 | sort -u)
+        if [ "${{ github.event_name }}" = "push" ]; then
+          # For new branches, compare with the default branch
+          MODIFIED_LABS=$(git diff --name-only origin/main HEAD | grep '^labs/lab_' | cut -d'/' -f1-2 | sort -u)
+        else
+          # For existing branches, compare with previous commit
+          MODIFIED_LABS=$(git diff --name-only HEAD~1 HEAD | grep '^labs/lab_' | cut -d'/' -f1-2 | sort -u)
+        fi
         
         if [ -z "$MODIFIED_LABS" ]; then
           echo "No lab directories were modified. Skipping tests."
