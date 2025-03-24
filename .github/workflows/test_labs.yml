@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - 'main'
-      - 'lab-*'  # Only run on student lab branches
+      - 'lab-*'  # Only run on lab branches
 
 jobs:
   test:
