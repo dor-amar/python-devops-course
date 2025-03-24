@@ -3,6 +3,7 @@ name: Test Python Labs
 on:
   push:
     branches:
+      - 'main'
       - 'lab-*'  # Only run on student lab branches
 
 jobs:
