@@ -35,29 +35,24 @@ jobs:
         echo "Changed files in the last commit:"
         git diff --name-only HEAD~1 HEAD
 
-    # Step 5: Find and test modified labs
-    - name: Run Tests in Modified Labs
+    # Step 5: Run tests
+    - name: Run Tests
       run: |
-        # Extract lab directories that were modified (like labs/lab_01)
+        # Get modified lab directories
         MODIFIED_LABS=$(git diff --name-only HEAD~1 HEAD | grep '^labs/lab_' | cut -d'/' -f1-2 | sort -u)
-
+        
         if [ -z "$MODIFIED_LABS" ]; then
           echo "No lab directories were modified. Skipping tests."
           exit 0
         fi
-
+        
         echo "Modified lab directories:"
         echo "$MODIFIED_LABS"
-
-        # Loop over each modified lab directory and run tests
-        for LAB in $MODIFIED_LABS; do
-          echo "----------------------------------------"
-          echo "Running tests for $LAB..."
-          if [ -d "$LAB/tests" ]; then
-            cd $LAB
-            python -m pytest tests/ -v || exit 1
-            cd ../..
-          else
-            echo "No 'tests' directory found in $LAB. Skipping."
-          fi
+        
+        # Run tests only for modified labs
+        for lab in $MODIFIED_LABS; do
+          echo "Running tests for $lab..."
+          cd $lab
+          python -m pytest tests/ -v
+          cd ../..
         done
