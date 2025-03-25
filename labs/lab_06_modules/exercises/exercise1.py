@@ -117,4 +117,81 @@ if __name__ == "__main__":
     except ValueError as e:
         print(f"Error: {e}")
     except Exception as e:
-        print(f"Unexpected error: {e}") 
+        print(f"Unexpected error: {e}")
+
+
+"""
+Exercise 1: Creating and Using Python Modules
+
+In this exercise, you'll practice creating and importing modules in Python.
+You'll create a simple calculator module with basic arithmetic operations.
+
+TODO:
+1. Create a file called 'calculator.py' with the following functions:
+   - add(a: float, b: float) -> float
+   - subtract(a: float, b: float) -> float
+   - multiply(a: float, b: float) -> float
+   - divide(a: float, b: float) -> float
+   Make sure to handle division by zero!
+
+2. In this file, import your calculator module and:
+   - Create a function called 'calculate' that takes:
+     * operation: str (one of: 'add', 'subtract', 'multiply', 'divide')
+     * num1: float
+     * num2: float
+   - The function should return the result of the specified operation
+   - Raise ValueError for invalid operations
+   - Handle division by zero gracefully
+
+Example usage:
+    result = calculate('add', 10, 5)      # Should return 15.0
+    result = calculate('divide', 10, 2)    # Should return 5.0
+    result = calculate('divide', 10, 0)    # Should raise an error
+    result = calculate('power', 2, 3)      # Should raise ValueError
+"""
+
+# TODO: Import your calculator module here
+
+
+def calculate(operation: str, num1: float, num2: float) -> float:
+    """
+    Performs the specified arithmetic operation on two numbers.
+    
+    Args:
+        operation: The arithmetic operation to perform ('add', 'subtract', 'multiply', 'divide')
+        num1: The first number
+        num2: The second number
+        
+    Returns:
+        float: The result of the operation
+        
+    Raises:
+        ValueError: If the operation is invalid or if trying to divide by zero
+    """
+    # TODO: Implement this function
+    pass
+
+
+def main():
+    """Test the calculate function with various operations."""
+    test_cases = [
+        ('add', 10, 5),
+        ('subtract', 10, 5),
+        ('multiply', 10, 5),
+        ('divide', 10, 5),
+        ('divide', 10, 0),  # Should handle this error
+        ('power', 2, 3),    # Should raise ValueError
+    ]
+
+    for operation, num1, num2 in test_cases:
+        try:
+            result = calculate(operation, num1, num2)
+            print(f"{operation}({num1}, {num2}) = {result}")
+        except ValueError as e:
+            print(f"Error: {e}")
+        except Exception as e:
+            print(f"Unexpected error: {e}")
+
+
+if __name__ == "__main__":
+    main() 

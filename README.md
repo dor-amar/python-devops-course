@@ -30,6 +30,10 @@ You can follow this course in **two ways**:
 | 14 | Python Basics | [Project - Student Management System](modules/python-basics/in-module-labs/lab_03.md) |  | | |
 | 15 | Python Basics | [Basics of Dictionaries](modules/python-basics/dictionary.md) | [Lab 🧪](modules/python-basics/in-module-labs/lab_04.md) | | |
 | 16 | Python Basics | [Dictionaries vs JSON](modules/python-basics/dictionary-vs-json.md) | [Lab 🧪](modules/python-basics/in-module-labs/lab_02.md) | | |
+| 17 | Python Basics | [Exception Handling](modules/python-basics/exception-handling.md) | [Lab 🧪](modules/python-basics/in-module-labs/lab_07.md) [Lab 🧪](labs/lab_09_error_handling/) | | |
+| 18 | Python Basics | [Working With Files](modules/python-basics/files.md) | [Lab 🧪](modules/python-basics/in-module-labs/lab_08.md) [Lab 🧪](labs/lab_07_files/) | | |
+| 19 | Python Basics | [Modules](modules/python-basics/modules.md) | [Lab 🧪](modules/python-basics/in-module-labs/lab_09.md) [Lab 🧪](labs/lab_06_modules/) | | |
+
 
 
 
