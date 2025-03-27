@@ -303,7 +303,6 @@ print(result)
 **Output:**
 
 ```python
-pythonCopy code
 {1: 'd', 2: 'b', 3: 'c'}
 
 ```
