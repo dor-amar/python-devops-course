@@ -1,3 +1,88 @@
+# if **name** == "**main**"
+
+In Python, the construct `if __name__ == "__main__":` is a common idiom used to make code both importable as a module and executable as a script.
+
+Here's how it works:
+
+1. **`__name__` variable**: Every Python module has a special built-in variable called `__name__`. When a module is run directly (for example, using `python myscript.py`), the `__name__` variable is set to `"__main__"`. If the module is imported into another module, `__name__` is set to the module's name.
+2. **`if __name__ == "__main__":` block**: This line checks whether the script is being run directly (i.e., `__name__ == "__main__"`) or being imported as a module into another script. If it is run directly, the code inside this `if` block will be executed. If the script is imported, the code inside this block will not run.
+
+### **Why Use `if __name__ == "__main__"`?**
+
+- It lets you write code that can either:
+    - **Run directly as a script**, or
+    - **Be imported as a module** without running the main code.
+
+### Example:
+
+```python
+# myscript.py
+
+def main():
+    print("Hello, World!")
+
+if __name__ == "__main__":
+    main()
+```
+
+- **When run directly:** If you run `myscript.py` directly from the command line, the output will be `Hello, World!`.
+    
+    ```
+    $ python myscript.py
+    Hello, World!
+    ```
+    
+- **When imported as a module:** If you import `myscript.py` into another script, the `main()` function won't run automatically. This allows you to reuse the functions defined in `myscript.py` without executing the script's main functionality.
+    
+    ```python
+    # another_script.py
+    
+    import myscript
+    
+    # main() from myscript won't be executed automatically
+    ```
+    
+
+### Why Use It?
+
+- **Running as a Script:** If you run the file directly (like `python myfile.py`), the code inside this block will execute. This is useful for testing or running the script on its own.
+- **Importing as a Module:** If you import the file into another script, the code inside this block **will not run**. This allows you to use functions or classes from the file without accidentally running the script’s main code.
+
+### Simple Example:
+
+- **Direct Run:**
+    
+    ```python
+    # myfile.py
+    print("This always runs")
+    
+    if __name__ == "__main__":
+        print("This runs only when the file is run directly")
+    ```
+    
+    Output when running `python myfile.py`:
+    
+    ```csharp
+    This always runs
+    This runs only when the file is run directly
+    ```
+    
+- **When Imported:**
+    
+    ```python
+    # another_file.py
+    import myfile
+    ```
+    
+    Output:
+    
+    ```scss
+    This always runs
+    ```
+    
+    (Notice that "This runs only when the file is run directly" doesn't print because the file was imported, not run directly.)
+
+
 ### **What is a Module?**
 
 A **module** in Python is a file that contains Python code — functions, variables, or classes — that can be reused in other Python programs. By creating your own module, you can:
