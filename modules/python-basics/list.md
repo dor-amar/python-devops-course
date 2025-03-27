@@ -333,3 +333,30 @@ print('Set A and Set B are not equal')
 | **Set** | No | Yes | No | `{}` |
 
 These three data structures are commonly used in Python, each suited for different types of tasks.
+
+```python
+import time
+
+my_list = list(range(1000000))
+my_tuple = tuple(my_list)
+my_set = set(my_list)
+
+# Measure lookup time
+start = time.time()
+999999 in my_list
+print("List lookup:", time.time() - start)
+
+start = time.time()
+999999 in my_tuple
+print("Tuple lookup:", time.time() - start)
+
+start = time.time()
+999999 in my_set
+print("Set lookup:", time.time() - start)
+
+
+```
+
+List and Tuple take milliseconds (ms) to look up the value.
+
+Set takes microseconds (μs) — about 1,000x faster!
