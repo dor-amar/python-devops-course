@@ -1,6 +1,8 @@
 # Local AI Interface Project
 
-## Visit - https://docs.gpt4all.io/ For more details on the model.
+### Visit - https://docs.gpt4all.io/ For more details on the model.
+### Connect Models API - https://docs.gpt4all.io/gpt4all_desktop/models.html#connect-model-apis
+### https://docs.gpt4all.io/gpt4all_python/home.html#load-llm
 
 ## Overview
 Create a Python interface for interacting with a local AI model. This project teaches practical software development skills while working with AI technology.

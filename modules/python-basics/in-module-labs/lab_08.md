@@ -31,7 +31,7 @@ Using `with open(...)` ensures that the file is closed properly even if an error
 
 ---
 
-### 🔹 Task 1: Write to a File
+###  Task 1: Write to a File
 
 Create a file named `notes.txt` and write the text `"Python is great for DevOps!"`.
 
@@ -41,7 +41,7 @@ Create a file named `notes.txt` and write the text `"Python is great for DevOps!
 
 ---
 
-### 🔹 Task 2: Read the File
+###  Task 2: Read the File
 
 Read the contents of `notes.txt` and print them.
 
@@ -51,13 +51,13 @@ Read the contents of `notes.txt` and print them.
 
 ---
 
-### 🔹 Task 3: Append to the File
+###  Task 3: Append to the File
 
 Append the line `"File operations are simple in Python."` to `notes.txt`.
 
 ---
 
-### 🔹 Task 4: Read Line by Line
+###  Task 4: Read Line by Line
 
 Open `notes.txt` and read it line by line using a loop. Print each line with its line number.
 
@@ -70,19 +70,19 @@ Line 2: File operations are simple in Python.
 
 ---
 
-### 🔹 Task 5: Handle File Not Found
+###  Task 5: Handle File Not Found
 
 Try to read from a file called `missing.txt` which doesn't exist. Catch the `FileNotFoundError` and print a friendly error message.
 
 ---
 
-### 🔹 Task 6: Copy File Content
+###  Task 6: Copy File Content
 
 Read content from `notes.txt` and write it to a new file called `backup.txt`.
 
 ---
 
-### 🔹 Bonus Task: Count Words
+###  Bonus Task: Count Words
 
 Count how many words are in `notes.txt`.
 

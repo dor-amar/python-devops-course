@@ -4,7 +4,7 @@
 
 ### Objectives
 
-By the end of this lab, students will:
+By the end of this lab, You will:
 
 - Understand what exceptions are and why they occur.
 - Learn how to use `try`, `except`, `else`, and `finally`.

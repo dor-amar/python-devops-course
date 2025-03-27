@@ -1,4 +1,13 @@
-"""Basic file operations module."""
+"""
+Exercise 1: Basic File Operations
+
+Practice basic file operations in Python including reading, writing, and checking file existence.
+
+TODO:
+1. Implement the following functions to handle basic file operations
+2. Add proper error handling for file operations
+3. Test your implementation with different file types
+"""
 
 import os
 import shutil
@@ -7,42 +16,37 @@ from pathlib import Path
 
 
 def read_file(filepath: str) -> str:
-    """Read the entire contents of a file.
-
+    """
+    TODO: Implement function to read and return the contents of a file
+    
     Args:
         filepath: Path to the file to read
-
+        
     Returns:
-        str: Contents of the file
-
+        Contents of the file as a string
+        
     Raises:
-        FileNotFoundError: If file doesn't exist
+        FileNotFoundError: If the file doesn't exist
         IOError: If there's an error reading the file
     """
-    try:
-        with open(filepath, 'r', encoding='utf-8') as f:
-            return f.read()
-    except FileNotFoundError:
-        raise FileNotFoundError(f"File not found: {filepath}")
-    except IOError as e:
-        raise IOError(f"Error reading file: {e}")
+    pass
 
 
-def write_file(filepath: str, content: str) -> None:
-    """Write content to a file, overwriting if it exists.
-
+def write_file(filepath: str, content: str) -> bool:
+    """
+    TODO: Implement function to write content to a file
+    
     Args:
         filepath: Path to the file to write
         content: Content to write to the file
-
+        
+    Returns:
+        True if write was successful, False otherwise
+        
     Raises:
         IOError: If there's an error writing to the file
     """
-    try:
-        with open(filepath, 'w', encoding='utf-8') as f:
-            f.write(content)
-    except IOError as e:
-        raise IOError(f"Error writing to file: {e}")
+    pass
 
 
 def append_to_file(filepath: str, content: str) -> None:
@@ -113,16 +117,17 @@ def get_file_info(filepath: str) -> Dict[str, Any]:
         raise OSError(f"Error getting file info: {e}")
 
 
-def check_file_exists(filepath: str) -> bool:
-    """Check if a file exists.
-
-    Args:
-        filepath: Path to check
-
-    Returns:
-        bool: True if file exists, False otherwise
+def file_exists(filepath: str) -> bool:
     """
-    return os.path.exists(filepath)
+    TODO: Implement function to check if a file exists
+    
+    Args:
+        filepath: Path to the file to check
+        
+    Returns:
+        True if file exists, False otherwise
+    """
+    pass
 
 
 def get_file_size(filepath: str) -> int:
@@ -202,41 +207,11 @@ def delete_file(filepath: str) -> None:
         raise OSError(f"Error deleting file: {e}")
 
 
-# Example usage
+def main():
+    """Test your file operations implementation."""
+    # TODO: Add test cases for your functions
+    pass
+
+
 if __name__ == "__main__":
-    try:
-        # Test file operations
-        test_file = "test.txt"
-        content = "Hello, World!\nThis is a test file."
-        
-        # Write to file
-        write_file(test_file, content)
-        print(f"Created file: {test_file}")
-        
-        # Read file
-        read_content = read_file(test_file)
-        print(f"File contents:\n{read_content}")
-        
-        # Append to file
-        append_to_file(test_file, "\nAppended content")
-        print("\nAppended content")
-        
-        # Get file info
-        info = get_file_info(test_file)
-        print(f"\nFile info: {info}")
-        
-        # Copy file
-        copy_file(test_file, "test_copy.txt")
-        print("\nCopied file to test_copy.txt")
-        
-        # Move file
-        move_file(test_file, "test_moved.txt")
-        print("Moved file to test_moved.txt")
-        
-        # Delete files
-        delete_file("test_copy.txt")
-        delete_file("test_moved.txt")
-        print("\nDeleted test files")
-        
-    except Exception as e:
-        print(f"Error: {e}") 
+    main() 

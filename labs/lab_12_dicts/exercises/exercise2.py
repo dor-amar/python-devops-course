@@ -4,7 +4,7 @@ In this exercise, you will work with more advanced dictionary operations. You wi
 1. Count word frequencies in text
 2. Invert dictionaries
 3. Find common keys between dictionaries
-4. Perform deep updates on nested dictionaries
+4. Perform deep updates on nested dictionaries (Bonus)
 """
 
 from typing import Dict, List, Optional
