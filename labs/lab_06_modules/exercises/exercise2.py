@@ -1,61 +1,71 @@
 """
 Exercise 2: Working with Packages
 
-In this exercise, you'll create a simple package for managing a library system.
-You'll practice organizing code into modules within a package.
+This exercise focuses on creating and using Python packages.
 
-TODO:
-1. Create a package called 'library' with the following structure:
-   library/
-   ├── __init__.py
-   ├── books.py
-   ├── members.py
-   └── utils.py
-
-2. In books.py, create:
-   - class Book with attributes:
-     * title: str
-     * author: str
-     * isbn: str
-     * available: bool
-   - Function to search books by title or author
-
-3. In members.py, create:
-   - class Member with attributes:
-     * name: str
-     * member_id: str
-     * borrowed_books: list
-   - Functions for borrowing and returning books
-
-4. In utils.py, create:
-   - Function to generate unique IDs for books and members
-   - Function to validate ISBN numbers
-
-5. In __init__.py:
-   - Import and expose the main classes and functions
-   - Define __all__ to control what gets imported with 'from library import *'
-
-Example usage:
-    from library import Book, Member
-    
-    book = Book("Python Programming", "John Smith", "123-456-789")
-    member = Member("Alice Johnson", "M001")
-    
-    member.borrow_book(book)
-    member.return_book(book)
+Learning objectives:
+- Understanding package structure
+- Working with __init__.py
+- Package importing
+- Package documentation
 """
 
-# TODO: Create the library package and import it here
+# TODO: Create a package called 'store' with the following structure:
+"""
+store/
+├── __init__.py
+├── inventory.py
+├── customer.py
+└── utils.py
+
+Requirements for each module:
+
+1. inventory.py:
+   - Class Product(name: str, price: float, quantity: int)
+   - Function add_product()
+   - Function remove_product()
+   - Function update_quantity()
+
+2. customer.py:
+   - Class Customer(name: str, email: str)
+   - Function register_customer()
+   - Function find_customer()
+
+3. utils.py:
+   - Function generate_product_id()
+   - Function validate_email()
+   - Function calculate_total()
+
+4. __init__.py:
+   - Import and expose main classes
+   - Define __all__
+   - Add package metadata
+"""
+
+def test_store_package():
+    """
+    TODO: Implement this function to test your store package
+    
+    Requirements:
+    1. Import your package modules
+    2. Create test products and customers
+    3. Test all functionality
+    4. Handle errors appropriately
+    """
+    pass
 
 
 def main():
-    """Test the library package functionality."""
-    try:
-        # TODO: Test your library package implementation here
-        pass
-        
-    except Exception as e:
-        print(f"Error: {e}")
+    """
+    TODO: Implement main function to demonstrate package usage
+    
+    Suggested demonstrations:
+    1. Creating and managing products
+    2. Customer registration and lookup
+    3. Calculating orders
+    4. Error handling
+    """
+    pass
 
 
 if __name__ == "__main__":
