@@ -1,1 +1,10 @@
 practice/*
+
+# Dont commit these files
+*.json
+*.csv
+*.xlsx
+*.xls
+*.doc
+*.docx
+*.ppt
