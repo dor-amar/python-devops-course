@@ -50,6 +50,8 @@ You can follow this course in **two ways**:
 4. [The Calculator Project](modules/python-basics/in-module-labs/calculator.md)
 5. [Higher Lower Game](modules/python-basics/in-module-labs/high-low.md)
 
+# Task
+6. [Task](modules/python-basics/in-module-labs/task.md)
 
 # Tasks
 ## Go to Folder general-exercises - start coding ! 
