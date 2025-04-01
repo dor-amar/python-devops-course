@@ -54,8 +54,6 @@ You can follow this course in **two ways**:
 
 
 
-
-
 # Python for DevOps Engineers - Just Labs and Projects
 
 # Projects 
@@ -73,9 +71,42 @@ You can follow this course in **two ways**:
 
 # Tasks
 
-## Go to Folder general-exercises - start coding ! 
+## General Exercises
 
----
+| # | Exercise Name | Topics Covered | Link |
+|---|--------------|----------------|------|
+| 1 | OOP Vehicle System | Classes, Inheritance, Properties, Methods | [View Exercise](general-exercises/oop_exercises.py) |
+| 2 | Control Flow Advanced | Break, Continue, While Loops | [View Exercise](general-exercises/control_flow_advanced.py) |
+| 3 | Library Management System | Packages, Modules, Project Structure | [View Exercise](general-exercises/package_module_exercise/) |
+| 4 | Number of Digits | Functions, Integer Operations | [View Exercise](general-exercises/num_of_digits.py) |
+| 5 | Time Comparison | String Manipulation, Time Logic | [View Exercise](general-exercises/is_earlier.py) |
+| 6 | Password Validator | String Validation, Conditions | [View Exercise](general-exercises/is_valid_password.py) |
+| 7 | Word Absence Checker | String Operations, Text Analysis | [View Exercise](general-exercises/is_word_absent.py) |
+| 8 | Student Finder | Data Structures, Search Operations | [View Exercise](general-exercises/find_student.py) |
+| 9 | Grade Calculator | Numerical Operations, Conditions | [View Exercise](general-exercises/grader.py) |
+| 10 | Mailing List Manager | List Operations, Email Validation | [View Exercise](general-exercises/mailing_list.py) |
+| 11 | Log Message Handler | String Formatting, Logging | [View Exercise](general-exercises/log_message.py) |
+| 12 | Shopping List Manager | Lists, User Input | [View Exercise](general-exercises/shopping_list2.py) |
+| 13 | Username Generator | String Operations | [View Exercise](general-exercises/get_username.py) |
+| 14 | Recent Messages Queue | Lists, Queue Operations | [View Exercise](general-exercises/recent_messages.py) |
+| 15 | Word Selector | String Splitting, Lists | [View Exercise](general-exercises/every_second_word.py) |
+| 16 | Sandwich Builder | Lists, Dictionaries | [View Exercise](general-exercises/sandwich_ingredients.py) |
+| 17 | Last Element Finder | List Operations | [View Exercise](general-exercises/last_one.py) |
+| 18 | Shopping List Basic | Lists, Basic Operations | [View Exercise](general-exercises/shopping_list.py) |
+| 19 | Absolute Value | Mathematical Functions | [View Exercise](general-exercises/my_abs.py) |
+| 20 | Temperature Assessor | Conditional Logic | [View Exercise](general-exercises/assess_temperature.py) |
+| 21 | Driving Eligibility Advanced | Complex Conditions | [View Exercise](general-exercises/can_drive2.py) |
+| 22 | Driving Eligibility Basic | Basic Conditions | [View Exercise](general-exercises/can_drive.py) |
+| 23 | Even Number Checker | Basic Mathematics | [View Exercise](general-exercises/is_even.py) |
+| 24 | Time Converter | Time Calculations | [View Exercise](general-exercises/time_convertor.py) |
+| 25 | Cab Capacity Calculator | Mathematical Operations | [View Exercise](general-exercises/fill_a_cab.py) |
+| 26 | Function Debugger | Error Finding, Debugging | [View Exercise](general-exercises/bad_function.py) |
+| 27 | Tax Calculator | Percentage Calculations | [View Exercise](general-exercises/tax_calc.py) |
+| 28 | Advanced Calculator | Complex Operations | [View Exercise](general-exercises/calculator2.py) |
+| 29 | Basic Calculator | Simple Operations | [View Exercise](general-exercises/calculator1.py) |
+| 30 | Average Calculator Debug | Debugging, Mathematics | [View Exercise](general-exercises/bad_average.py) |
+| 31 | Century Calculator | Date Operations | [View Exercise](general-exercises/get_century.py) |
+| 32 | Seconds Calculator | Time Operations | [View Exercise](general-exercises/get_seconds.py) |
 
 ## 🔧 Prerequisites
 Before starting, make sure you have:
