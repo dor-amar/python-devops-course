@@ -65,6 +65,98 @@ OOP is particularly useful in scenarios where:
 - **Think of `self` as "this object"**: When you create an object from a class, `self` allows that object to refer to itself. It’s like saying, “this particular object I’m working with.”
 - **Why do we need `self`?**: When you define methods in a class, you want those methods to work with the data (attributes) specific to the object that calls them. `self` lets you do that by linking the method to the object’s data.
 
+# **What is a constructor in Python?**
+
+The constructor is a method that is called when an object is created. This method is defined in the class and can be used to initialize basic variables.
+
+If you create four objects, the class constructor is called four times. Every class has a constructor, but its not required to explicitly define it.
+
+### **Constructor**
+
+Each time an object is created a method is called. That methods is named the **constructor**.
+
+The constructor is created with the function **init**. As parameter we write the self keyword, which refers to itself (the object). The process visually is:
+
+![](https://pythonbasics.org/wp-content/uploads/2018/03/constructor-1-700x77.png)
+
+Inside the constructor we initialize two variables: legs and arms. Sometimes variables are named properties in the context of object oriented programming. We create one object (bob) and just by creating it, its variables are initialized.
+
+```
+classHuman:
+def__init__(self):
+       self.legs =2
+       self.arms =2
+
+bob = Human()
+print(bob.legs)
+
+```
+
+---
+
+The newly created object now has the variables set, without you having to define them manually. You could create tens or hundreds of objects without having to set the values each time.
+
+### **python __init__**
+
+The function **init**(self) builds your object. Its not just variables you can set here, you can call class methods too. Everything you need to initialize the object(s).
+
+Lets say you have a class Plane, which upon creation should start flying. There are many steps involved in taking off: accelerating, changing flaps, closing the wheels and so on.
+
+*The default actions can be defined in methods. These methods can be called in the constructor*.
+
+```
+classPlane:
+def__init__(self):
+        self.wings =2
+
+# fly
+        self.drive()
+        self.flaps()
+        self.wheels()
+
+defdrive(self):
+            print('Accelerating')
+
+defflaps(self):
+            print('Changing flaps')
+
+defwheels(self):
+            print('Closing wheels')
+
+ba = Plane()
+
+```
+
+---
+
+To summarize: A constructor is called if you create an object. In the constructor you can set variables and call methods.
+
+### **Default value**
+
+The constructor of a class is unique: initiating objects from different classes will call different constructors.
+
+Default values of newly created objects can be set in the constructor.
+
+The example belwo shows two classes with constructors. Then two objects are created but different constructors are called.
+
+```
+classBug:
+def__init__(self):
+       self.wings =4
+
+classHuman:
+def__init__(self):
+       self.legs =2
+       self.arms =2
+
+bob = Human()
+tom = Bug()
+
+print(tom.wings)
+print(bob.arms)
+
+```
+
 ### **2. Defining a Class**
 
 - **Explanation**:

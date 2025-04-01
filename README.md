@@ -13,7 +13,7 @@ You can follow this course in **two ways**:
 
 | # | Topic | Tutorial | Lab | Project | Status |
 |---|-------|----------|-----|---------|--------|
-| 1 | **Section 1 - Python Basics for DevOps** | | | | |
+| 1 | **Python Basics for DevOps** | | | | |
 | 2 | Shell vs Python | [Shell vs Python](modules/python-basics/shell-vs-python.md) | | |  |
 | 2 | Python Basics  | [Intro to Python](modules/python-basics/intro-to-python.md) | | |  |
 | 3 | Python Basics  | [Python Basic Syntax](modules/python-basics/python-syntax.md) | | |  |
@@ -39,7 +39,18 @@ You can follow this course in **two ways**:
 | 24 | Python - OOP| [OOP](modules/python-basics/oop.md) | [Lab 🧪](modules/python-basics/in-module-labs/oop.md) [Lab 🧪](modules/python-basics/in-module-labs/oop2.md) | | |
 | 25 | Python - OOP| [Inheritance & Polymorphism](modules/python-basics/inheritance-polymorphism.md) | [Lab 🧪](modules/python-basics/in-module-labs/oop3.md) | | |
 | 26 | Python - OOP| [Abstraction & Encapsulation ](modules/python-basics/abstraction-encapsulation.md) | [Lab 🧪](modules/python-basics/in-module-labs/oop4.md) | | |
-| 27 | Python - OOP| | | [Project - Student Management System](modules/python-basics/in-module-labs/oop-project.md) | |
+| 27 | Python - OOP| | | [Smart Café Order Management System](modules/python-basics/in-module-labs/oop-project.md) | |
+|  | **Flask, Databases and SQL** | | | | |
+| 28 | Python - Flask | [Flask Introduction](modules/python-basics/flask-intro.md) |  |  | |
+| 29 | Python - Flask | [Flask Hello World](modules/python-basics/flask-hello-world.md) |  |  | |
+| 30 | Python - Flask | [Flask Routing, Templates, and Forms](modules/python-basics/flask-route-template-form.md) |  |  | |
+| 31 | Python - Flask |  |  | [Add a Search Feature to the Flask API](modules/python-basics/in-module-labs/flask-project.md) |  |
+| 32 | Python - DB + SQL | [Database + SQL](modules/python-basics/db-sql.md) |  |  |  |
+| 33 | Python - DB + SQL | [SQLite3](modules/python-basics/sqlite3.md) |  |  |  |
+| 34 | Python - DB + SQL | [Setting Up Flask with SQLite3](modules/python-basics/flask-sqlite3.md) |  |  |  |
+| 35 | Python - Flask | [REST API](modules/python-basics/rest-api.md) |  |  |  |
+| 36 | Python - Flask |  |  | [Flask + SQLite To-Do App with NGINX](modules/python-basics/in-module-labs/flask-project-2.md)  |  |
+| 37 | Python - Flask |  |  | [Flask + Discord](modules/python-basics/in-module-labs/flask-project-3.md)  |  |
 
 
 
@@ -54,6 +65,11 @@ You can follow this course in **two ways**:
 4. [The Calculator Project](modules/python-basics/in-module-labs/calculator.md)
 5. [Higher Lower Game](modules/python-basics/in-module-labs/high-low.md)
 6. [Shopping Cart Total Calculator](modules/python-basics/in-module-labs/task.md)
+7. [Freelancer Project Tracker](modules/python-basics/in-module-labs/oop-task.md)
+8. [Smart Café Order Management System](modules/python-basics/in-module-labs/oop-project.md)
+9. [Add a Search Feature to the Flask API](modules/python-basics/in-module-labs/flask-project.md)
+10. [Flask + SQLite To-Do App with NGINX](modules/python-basics/in-module-labs/flask-project-2.md)
+11. [Flask + Discord](modules/python-basics/in-module-labs/flask-project-3.md)
 
 # Tasks
 
