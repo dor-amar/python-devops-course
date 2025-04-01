@@ -92,7 +92,7 @@ The Student Management System is a simple console-based application where users 
 
 ---
 
-### **Phase 6: Optimize with Lambda Functions**
+### **Phase 6: Optimize with Lambda Functions (Bonus)** 
 
 1. Use a **lambda function** to sort the `students` list by score in descending order when finding the highest scorer.
 2. Example:
@@ -133,15 +133,6 @@ The Student Management System is a simple console-based application where users 
 
 1. Submit the Python script `student_management.py`.
 2. Include test cases in the form of sample inputs and outputs.
-
----
-
-### **Evaluation Criteria**
-
-1. **Correctness**: All functionalities work as intended.
-2. **Code Quality**: The code is clean, modular, and follows best practices.
-3. **Error Handling**: The program gracefully handles invalid inputs and edge cases.
-4. **Bonus Features**: Extra points for implementing bonus tasks.
 
 ---
 
