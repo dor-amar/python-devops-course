@@ -8,6 +8,14 @@ You can follow this course in **two ways**:
 
 ---
 
+## Quick Navigation
+- [Tutorials and Labs](#python-for-devops-engineers---tutorials--labs)
+- [Projects](#projects)
+- [General Exercises](#general-exercises)
+- [Prerequisites](#-prerequisites)
+- [Getting Started](#-getting-started)
+
+---
 
 # Python for DevOps Engineers - Tutorials + Labs 
 
