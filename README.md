@@ -49,7 +49,7 @@ You can follow this course in **two ways**:
 3. [Create a Password Generator](modules/python-basics/in-module-labs/pass-gen.md)
 4. [The Calculator Project](modules/python-basics/in-module-labs/calculator.md)
 5. [Higher Lower Game](modules/python-basics/in-module-labs/high-low.md)
-6ץ [Shopping Cart Total Calculator](modules/python-basics/in-module-labs/task.md)
+6. [Shopping Cart Total Calculator](modules/python-basics/in-module-labs/task.md)
 
 # Tasks
 
