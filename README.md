@@ -36,6 +36,10 @@ You can follow this course in **two ways**:
 | 21 | Python Basics | [Modules](modules/python-basics/modules.md) | [Lab 🧪](modules/python-basics/in-module-labs/lab_09.md) [Lab 🧪](labs/lab_06_modules/) | | |
 | 22 | Python | [What is API](modules/python-basics/api.md) |  | | |
 | 23 | Python | [Working With API](modules/python-basics/working-with-api.md) | [Lab 🧪](modules/python-basics/in-module-labs/api.md) | | |
+| 24 | Python - OOP| [OOP](modules/python-basics/oop.md) | [Lab 🧪](modules/python-basics/in-module-labs/oop.md) [Lab 🧪](modules/python-basics/in-module-labs/oop2.md) | | |
+| 25 | Python - OOP| [Inheritance & Polymorphism](modules/python-basics/inheritance-polymorphism.md) | [Lab 🧪](modules/python-basics/in-module-labs/oop3.md) | | |
+| 26 | Python - OOP| [Abstraction & Encapsulation ](modules/python-basics/abstraction-encapsulation.md) | [Lab 🧪](modules/python-basics/in-module-labs/oop4.md) | | |
+| 27 | Python - OOP| | | [Project - Student Management System](modules/python-basics/in-module-labs/oop-project.md) | |
 
 
 
