@@ -35,7 +35,7 @@ You can follow this course in **two ways**:
 | 20 | Python Basics |  | |  [Project - Student Management System](modules/python-basics/in-module-labs/lab_03.md)| |
 | 21 | Python Basics | [Modules](modules/python-basics/modules.md) | [Lab 🧪](modules/python-basics/in-module-labs/lab_09.md) [Lab 🧪](labs/lab_06_modules/) | | |
 | 22 | Python | [What is API](modules/python-basics/api.md) |  | | |
-| 23 | Python | [Working With API](modules/python-basics/working-with-api.md) |  | | |
+| 23 | Python | [Working With API](modules/python-basics/working-with-api.md) | [Lab 🧪](modules/python-basics/in-module-labs/api.md) | | |
 
 
 
@@ -49,13 +49,11 @@ You can follow this course in **two ways**:
 3. [Create a Password Generator](modules/python-basics/in-module-labs/pass-gen.md)
 4. [The Calculator Project](modules/python-basics/in-module-labs/calculator.md)
 5. [Higher Lower Game](modules/python-basics/in-module-labs/high-low.md)
-
-# Task
-6. [Task](modules/python-basics/in-module-labs/task.md)
+6ץ [Shopping Cart Total Calculator](modules/python-basics/in-module-labs/task.md)
 
 # Tasks
-## Go to Folder general-exercises - start coding ! 
 
+## Go to Folder general-exercises - start coding ! 
 
 ---
 
