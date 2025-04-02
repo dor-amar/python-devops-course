@@ -1,15 +1,8 @@
-# JSON
-
 # Working with JSON Files in Python
 
-## Objective:
+JavaScript Object Notation (JSON) is a data exchange format. While originally designed for JavaScript, these days many computer programs interact with the web and use JSON.
 
-By the end of this class, you will:
-
-- Understand what JSON is
-- Learn how to parse JSON strings
-- Learn how to read and write JSON files using Python
-- Understand practical use cases (e.g., configs, APIs)
+Interacting with the web is mostly done through APIs (Application Programmable Interface), in JSON format.
 
 ---
 
@@ -41,105 +34,326 @@ It looks just like a Python dictionary — and that's the key idea!
 
 ---
 
-## Python’s `json` Module
+| JSON Data Type | Description |
+| --- | --- |
+| `object` | A collection of key-value pairs inside curly braces (`{}`) |
+| `array` | A list of values wrapped in square brackets (`[]`) |
+| `string` | Text wrapped in double quotes (`""`) |
+| `number` | Integers or floating-point numbers |
+| `boolean` | Either `true` or `false` without quotes |
+| `null` | Represents a [null value](https://realpython.com/null-in-python/), written as `null` |
 
-Python comes with a built-in `json` module to work with JSON data.
+Just like in dictionaries and lists, you’re able to nest data in JSON objects and arrays. For example, you can include an object as the value of an object. Also, you’re free to use any other allowed value as an item in a JSON array.
 
-### 1. **Parsing JSON Strings**
+---
 
-Convert a JSON string into a Python dictionary:
+## **Correct Way to Work With JSON Files**
+
+Use this pattern:
 
 ```python
 import json
 
-data = '{"name": "Dor", "age": 30}'
-parsed = json.loads(data)
-print(parsed["name"])  # Output: Dor
+with open("transactions.json") as f:
+    data = json.load(f)  # parse the full structure once
+
+for entry in data:
+    print(entry["event"])
 ```
 
-### 2. **Converting Python to JSON String**
+Now you're working with Python objects: `dict`s and `list`s, just like you would if you'd manually typed them in Python.
+
+---
+
+### **Convert Python Dictionaries to JSON**
 
 ```python
-person = {
-  "name": "Dor",
-  "skills": ["Python", "Docker"],
-  "is_teacher": True
+import json
+
+data = {
+    "name": "Jessica",
+    "age": 30,
+    "is_admin": True,
+    "skills": ["python", "devops"]
 }
 
-json_string = json.dumps(person)
+json_string = json.dumps(data)
+
+print(json_string)
+print(type(json_string))
+```
+
+🧾 **Output**:
+
+```json
+{"name": "Alice", "age": 30, "is_admin": true, "skills": ["python", "devops"]}
+```
+
+After importing the `json` module, you can use [`.dumps()`](https://docs.python.org/3/library/json.html#json.dumps) to convert a Python dictionary to a **JSON-formatted string**, which represents a JSON object.
+
+It’s important to understand that when you use `.dumps()`, you get a Python string in return. In other words, you don’t create any kind of JSON data type. The result is similar to what you’d get if you used Python’s built-in [`str()` function](https://realpython.com/python-strings/)
+
+**Note:** When you convert a dictionary to JSON, the dictionary keys will always be strings in JSON.
+
+```python
+import json
+
+data = {
+    1: "one",
+    2: "two",
+    3: "three"
+}
+
+json_string = json.dumps(data)
 print(json_string)
 ```
 
-### Note:
+### Output:
 
-- `dumps()` = Python ➜ JSON string
-- `loads()` = JSON string ➜ Python
+```json
+{"1": "one", "2": "two", "3": "three"}
+```
+
+Notice that the **integer keys** `1`, `2`, `3` are now **strings** `"1"`, `"2"`, `"3"` in the JSON output.
+
+When you use `json.dumps()`, you can use [additional arguments](https://docs.python.org/3/library/json.html#json.dumps) to control the look of the resulting JSON-formatted string
+
+- `indent` – adds line breaks and indentation (pretty print)
+- `sort_keys` – sorts keys alphabetically
+- `separators` – customizes the spacing between elements
+- `ensure_ascii` – handles Unicode characters
+
+## **Example Dictionary**
+
+```python
+import json
+
+data = {
+    "name": "Jessica",
+    "age": 30,
+    "admin": True,
+    "skills": ["python", "devops"]
+}
+```
 
 ---
 
-## Reading and Writing JSON Files
-
-### 3. **Writing a Python object to a JSON file:**
+### `indent`: Pretty Print with Indentation
 
 ```python
+print(json.dumps(data, indent=4))
+```
+
+### `sort_keys`: Sort Keys Alphabetically
+
+```python
+print(json.dumps(data, indent=2, sort_keys=True))
+```
+
+---
+
+### `separators`: Remove Whitespace for Compact Output
+
+```python
+print(json.dumps(data, separators=(",", ":")))
+```
+
+---
+
+### `ensure_ascii=False`: Keep Unicode Characters Readable
+
+```python
+emoji_data = {"message": "Hello 👋"}
+print(json.dumps(emoji_data, ensure_ascii=False))
+```
+
+---
+
+### **Write a JSON File With Python**
+
+The JSON format can come in handy when you want to save data outside of your Python program. Instead of spinning up a database, you may decide to use a JSON file to store data for your workflows. Again, Python has got you covered.
+
+The `json.dump()` function has two required arguments:
+
+1. The object you want to write
+2. The file you want to write into
+
+### 🧪 **Example**
+
+```python
+import json
+
+# Python dictionary
 data = {
-  "course": "DevOps",
-  "duration": "10 months"
+    "name": "Jessie",
+    "age": 30,
+    "is_admin": True,
+    "skills": ["python", "devops"]
 }
 
-with open("data.json", "w") as file:
-    json.dump(data, file)
+# Write it to a file
+with open("user.json", "w") as f:
+    json.dump(data, f)
 ```
 
-### 4. **Reading from a JSON file:**
+This creates a file named `user.json` in the current directory with the dictionary saved in **JSON format**.
+
+### Want It to Look Prettier?
+
+Add `indent=4` to make the file human-readable:
 
 ```python
-with open("data.json", "r") as file:
-    loaded_data = json.load(file)
-
-print(loaded_data["course"])  # Output: DevOps
-
+json.dump(data, f, indent=4)
 ```
 
-### Note:
-
-- `dump()` = Python ➜ File (JSON)
-- `load()` = File (JSON) ➜ Python
+| Action | Method |
+| --- | --- |
+| Dict → JSON string | `json.dumps(data)` |
+| Dict → JSON file | `json.dump(data, file)` |
 
 ---
 
-## Formatting Options in `json.dumps()`
+## **Reading JSON With Python**
+
+In the former sections, you learned how to serialize Python data into JSON-formatted strings and JSON files. Now, you’ll see what happens when you load JSON data back into your Python program.
+
+In parallel to `json.dumps()` and `json.dump()`, the `json` library provides two functions to deserialize JSON data into a Python object:
+
+The **two main ways** to read JSON depending on the source:
+
+| Use Case | Function |
+| --- | --- |
+| Reading JSON from a file | `json.load()` |
+| Reading JSON from a string | `json.loads()` |
+1. `json.loads()`: To deserialize a string, bytes, or [byte array](https://realpython.com/python-mutable-vs-immutable-types/#byte-arrays) instances
+2. `json.load()`: To deserialize a text file or a binary file
+
+As a rule of thumb, you work with `json.loads()` when your data is already present in your Python program. You use `json.load()` with external files that are saved on your disk.
+
+### **Read JSON From a File**
+
+If you have a file called `user.json` already.
+
+You can read it like this:
 
 ```python
-print(json.dumps(data, indent=2))
+import json
+
+with open("user.json", "r") as f:
+    data = json.load(f)
+
+print(data["name"])      # Alice
+print(data["skills"])    # ['python', 'devops']
 ```
 
-Optional parameters:
-
-- `indent=2` – pretty prints JSON
-- `sort_keys=True` – sorts dictionary keys
+ `json.load()` converts the file content into a **Python dictionary**.
 
 ---
 
-## Real-Life Use Cases
+## **How to Open an External JSON File in Python**
 
-- **Config files**: Store app settings (like DB URLs, secrets)
-- **APIs**: Sending and receiving JSON data
-- **Storing Data**: Save user info or logs in structured format
+> 🧠 An external JSON file simply means a .json file stored on your local disk or in a specific directory (not hardcoded into the script).
+> 
 
 ---
 
-## Mini Exercise (In-Class)
+### **Example JSON File: `config.json`**
+
+Make sure you have a file named `config.json` in your project folder:
+
+```json
+{
+    "app_name": "Inventory Tracker",
+    "version": "1.0",
+    "debug": true,
+    "max_items": 100
+}
+```
+
+---
+
+### **Python Code to Open and Read It**
 
 ```python
-# 1. Create a dictionary with your name, age, and 2 hobbies
-# 2. Write it to a file called "student.json"
-# 3. Read the file and print your hobbies
+import json
+
+# Open the external JSON file
+with open("config.json", "r") as f:
+    config = json.load(f)
+
+# Access values from the JSON
+print("App Name:", config["app_name"])
+print("Debug Mode:", config["debug"])
+
 ```
 
 ---
 
-## 📚 Sources
+**Key Points**
+
+- `open("config.json", "r")` opens the file in **read mode**
+- `json.load(f)` parses the file into a **Python dictionary**
+- You can now access values using standard Python syntax (`config["key"]`)
+
+---
+
+### What If the File Is in Another Folder?
+
+```python
+with open("configs/settings/config.json") as f:
+    config = json.load(f)
+```
+
+Just provide the **correct path** relative to where your Python script is running.
+
+---
+
+### If the File Doesn’t Exist
+
+Add error handling to avoid crashes:
+
+```python
+try:
+    with open("config.json", "r") as f:
+        config = json.load(f)
+except FileNotFoundError:
+    print("File not found.")
+except json.JSONDecodeError:
+    print("File exists but contains invalid JSON.")
+```
+
+### 🧠 Summary
+
+| Goal | Method |
+| --- | --- |
+| Open JSON file | `with open("file.json")` |
+| Parse JSON to dict | `json.load(file_object)` |
+
+---
+
+### **Validate** JSON syntax
+
+You can use the built-in `json` module and attempt to parse the data using `json.loads()` (for strings) or `json.load()` (for files).
+
+If the JSON is **invalid**, Python will raise a `json.JSONDecodeError`.
+
+## Validate JSON From a String
+
+```python
+import json
+
+json_str = '{"name": "Alice", "age": 30}'  # ✅ Valid JSON
+
+try:
+    parsed = json.loads(json_str)
+    print("✅ JSON is valid!")
+except json.JSONDecodeError as e:
+    print("❌ Invalid JSON:", e)
+```
+
+---
+
+## Sources
 
 - Python Docs: https://docs.python.org/3/library/json.html
 - Real Python JSON tutorial: https://realpython.com/python-json/
