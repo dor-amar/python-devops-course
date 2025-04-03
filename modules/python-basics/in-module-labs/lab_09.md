@@ -1,7 +1,5 @@
 # Build a Python Utility Module for File Analysis
 
-## Project Goal
-
 You will create a **reusable Python module** that analyzes `.txt` files and provides useful statistics, such as:
 
 - Word count
@@ -14,7 +12,7 @@ They will then **import and use** this module in a separate script to analyze an
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```
 project/
@@ -75,7 +73,7 @@ Write a CLI-style script that:
 
 ---
 
-### Task 3 (Bonus): Export Results
+### Task 3 Export Results
 
 Allow the user to choose if they want to export the results to `results.txt`.
 
@@ -84,24 +82,3 @@ Allow the user to choose if they want to export the results to `results.txt`.
 ## Sample Code Snippets
 
 ### `file_utils.py`
-
-```python
-import collections
-
-def read_file(file_path):
-    with open(file_path, 'r', encoding='utf-8') as f:
-        return f.read()
-
-def get_word_count(file_path):
-    text = read_file(file_path)
-    return len(text.split()
-```
-
----
-
----
-
-## Extra Ideas for Extension
-
-- Allow analysis of multiple files
-- Create a log file with timestamped runs
