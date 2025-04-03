@@ -115,6 +115,7 @@ You can follow this course in **two ways**:
 | 30 | Average Calculator Debug | Debugging, Mathematics | [View Exercise](general-exercises/bad_average.py) |
 | 31 | Century Calculator | Date Operations | [View Exercise](general-exercises/get_century.py) |
 | 32 | Seconds Calculator | Time Operations | [View Exercise](general-exercises/get_seconds.py) |
+| 33 | JSON | Practice JSON File Operations | [View Exercise](labs/lab_19_json_yaml/) |
 
 ## 🔧 Prerequisites
 Before starting, make sure you have:

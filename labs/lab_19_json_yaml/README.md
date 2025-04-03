@@ -1,29 +1,38 @@
-# Lab 19: Working with JSON and YAML
+# Lab: Working with JSON
 
-This lab focuses on working with JSON and YAML data formats in Python, including parsing, serialization, and data manipulation.
+This lab focuses on working with JSON data in Python, covering serialization, deserialization, file operations, validation, and practical applications.
 
-## Requirements
+## Exercises
 
-1. Create a module for JSON operations with the following features:
-   - JSON parsing and serialization
-   - Custom JSON encoders and decoders
-   - JSON file handling
-   - JSON schema validation
-   - JSON data manipulation
-
-2. Create a module for YAML operations that includes:
-   - YAML parsing and serialization
-   - YAML file handling
-   - YAML schema validation
-   - YAML data manipulation
-   - YAML anchors and aliases
-
-3. Create a module for data format conversion that includes:
-   - JSON to YAML conversion
-   - YAML to JSON conversion
-   - Data validation
-   - Error handling
+1. **Basic JSON Operations**
+   - Converting between Python dictionaries and JSON
+   - Handling different data types
    - Pretty printing
+   - Error handling
+
+2. **JSON File Operations**
+   - Reading from JSON files
+   - Writing to JSON files
+   - File path handling
+   - Encoding support
+
+3. **JSON Data Validation**
+   - Structure validation
+   - Data type checking
+   - Required field validation
+   - Nested validation
+
+4. **JSON Configuration Manager**
+   - Configuration loading
+   - Value validation
+   - Updates and backups
+   - Default values
+
+5. **JSON API Response Handler**
+   - Parsing API responses
+   - Field extraction
+   - Pagination handling
+   - Error management
 
 ## Directory Structure
 
