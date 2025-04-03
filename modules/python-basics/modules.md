@@ -91,7 +91,76 @@ A **module** in Python is a file that contains Python code — functions, variab
 - **Promote reusability**: Write the code once and use it in multiple programs.
 - **Simplify debugging**: Work on smaller chunks of code independently.
 
-### **Step 1: Create a Python Module**
+### **Import modules**
+
+You can load a module with the **import** keyword.
+
+In the example below we load the *os module*. This is short for operating system, so you can do system tasks.
+
+```
+import os
+os.system("dir")
+os.system("ls")
+os.system("ls -l")
+```
+
+---
+
+Using that module we call one of its functions named system (runs a command).
+
+In this case it will simply list the files in the directory (dir command).
+
+There are many many modules available for Python.
+
+### **Get specific functions from a module**
+
+To import a specific function in a module, you can use the line:
+
+```
+from moduleimport function
+```
+
+---
+
+There’s a module named *time* which has all kind of functionality for time: get the date, hour, minute, second and so on. That’s quite a lot of functionality.
+
+Lets say you want the program to wait 2 seconds. If you want, you can import a specific function instead of the whole module.
+
+```
+from time import sleep
+sleep(2)
+print("Hello, world!")  
+```
+
+---
+
+### **Import all functions from a module.**
+
+You can import all functions from a module, but this is not recommended.
+
+The example below imports the whole time module (all functions), which you can then use.
+
+```
+from time
+time.sleep(2)
+print("Hello, world!")
+```
+
+---
+
+### **List functions in module**
+
+To see all functions in a module, start the Python interpreter and type
+
+```
+# List functions in module  
+import os
+print(dir(os))
+```
+
+---
+
+### **Create a Python Module**
 
 A module is simply a Python file containing functions, variables, or classes. Save the file with a `.py` extension.
 
@@ -114,7 +183,7 @@ PI = 3.14159
 
 ---
 
-### **Step 2: Create a Python Script to Import the Module**
+### **Create a Python Script to Import the Module**
 
 Now, create another Python file to import and use the module.
 
@@ -135,7 +204,7 @@ print("Value of PI:", mymodule.PI)
 
 ---
 
-### **Step 3: Run the Script**
+### **Run the Script**
 
 1. Save both files (`mymodule.py` and `main.py`) in the same directory.
 2. Run `main.py` using the Python interpreter:
@@ -155,7 +224,7 @@ Value of PI: 3.14159
 
 ---
 
-### **Step 4: Using `from` to Import Specific Items**
+### **Using `from` to Import Specific Items**
 
 You can import specific functions or variables directly from the module.
 
@@ -174,7 +243,7 @@ print("Value of PI:", PI)
 
 ---
 
-### **Step 5: Store Modules in a Folder**
+### **Store Modules in a Folder**
 
 You can organize modules in a folder and treat it as a package.
 
@@ -201,12 +270,6 @@ print("Sum:", mymodule.add_numbers(8, 4))
 
 ---
 
-### **Bonus: Tips for Your Class**
-
-1. **Explain the Purpose of Modules**: To reuse code and keep the project organized.
-2. **Practice Hands-On**: Ask students to create their own modules, e.g., a `math_tools.py` with custom math functions.
-3. **Explain Module Search Path**: Python looks for modules in the current directory and paths defined in `sys.path`.
-
 **Example: Checking Module Search Paths**
 
 ```python
@@ -215,15 +278,9 @@ print(sys.path)
 
 ```
 
-## Modules
+Think of it as a **toolbox** with reusable tools (functions and classes).
 
-## What is a Module?
-
-A **module** is a file that contains Python code — functions, variables, or classes — that you can **reuse** in other Python programs.
-
-🧠 Think of it as a **toolbox** with reusable tools (functions and classes).
-
-### 📦 Types of Modules:
+### Types of Modules:
 
 - **Built-in modules** – Come with Python (e.g., `math`, `random`, `os`)
 - **External modules** – Installed via `pip` (e.g., `requests`, `pandas`)
@@ -258,7 +315,7 @@ print(m.pi)  # 3.141592653...
 
 ## Creating Your Own Module
 
-### Step 1: Create a file called `myutils.py`
+### Create a file called `myutils.py`
 
 ```python
 # myutils.py
@@ -269,7 +326,7 @@ def square(x):
     return x * x
 ```
 
-### Step 2: Use it in another file
+### Use it in another file
 
 ```python
 # main.py
@@ -278,21 +335,6 @@ import myutils
 print(myutils.greet("Noa"))
 print(myutils.square(4))  # 16
 
-```
-
----
-
-## 🔍 4. The `__name__ == "__main__"` Trick
-
-Use this to write code that only runs when the module is executed directly, not when imported:
-
-```python
-# myutils.py
-def greet(name):
-    return f"Hello, {name}!"
-
-if __name__ == "__main__":
-    print(greet("Test"))  # Only runs if you run myutils.py directly
 ```
 
 ---
@@ -360,17 +402,6 @@ print(os.getcwd())
 ✅ Use `__name__ == "__main__"` to control execution logic
 
 ---
-
-## 📝 Homework / Practice
-
-1. Create a module called `math_utils.py` with functions:
-    - `add(a, b)`
-    - `multiply(a, b)`
-2. Import and use it in another script.
-3. Install an external module (`pyfiglet`) and print styled text.
-
----
-
 ## References
 
 - [Python Official Docs – Modules](https://docs.python.org/3/tutorial/modules.html)

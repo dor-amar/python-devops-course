@@ -39,9 +39,9 @@ You can follow this course in **two ways**:
 | 16 | Python Basics | [Dictionaries vs JSON](modules/python-basics/dictionary-vs-json.md) | [Lab 🧪](modules/python-basics/in-module-labs/json-vs-dic.md) | | |
 | 17 | Python Basics | [Exception Handling](modules/python-basics/exception-handling.md) | [Lab 🧪](modules/python-basics/in-module-labs/lab_07.md) [Lab 🧪](labs/lab_09_error_handling/) | | |
 | 18 | Python Basics | [Working With Files](modules/python-basics/files.md) | [Lab 🧪](modules/python-basics/in-module-labs/lab_08.md) [Lab 🧪](labs/lab_07_files/) | | |
-| 19 | Python Basics | [JSON](modules/python-basics/json.md) | | | |
+| 19 | Python Basics | [JSON](modules/python-basics/json.md) |  [Lab 🧪](modules/python-basics/in-module-labs/json.md)| | |
 | 20 | Python Basics |  | |  [Project - Student Management System](modules/python-basics/in-module-labs/lab_03.md)| |
-| 21 | Python Basics | [Modules](modules/python-basics/modules.md) | [Lab 🧪](modules/python-basics/in-module-labs/lab_09.md) [Lab 🧪](labs/lab_06_modules/) | | |
+| 21 | Python Basics | [Modules and Packages](modules/python-basics/modules.md) | [Lab 🧪](modules/python-basics/in-module-labs/lab_09.md) [Lab 🧪](labs/lab_06_modules/) | | |
 | 22 | Python | [What is API](modules/python-basics/api.md) |  | | |
 | 23 | Python | [Working With API](modules/python-basics/working-with-api.md) | [Lab 🧪](modules/python-basics/in-module-labs/api.md) | | |
 | 24 | Python - OOP| [OOP](modules/python-basics/oop.md) | [Lab 🧪](modules/python-basics/in-module-labs/oop.md) [Lab 🧪](modules/python-basics/in-module-labs/oop2.md) | | |
