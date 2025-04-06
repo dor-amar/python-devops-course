@@ -8,6 +8,23 @@ You can follow this course in **two ways**:
 
 ---
 
+## 🔧 Prerequisites
+Before starting, make sure you have:
+✔ **Basic Linux knowledge**
+✔ **Python installed** (`>=3.8`)  
+✔ **VS Code or PyCharm**  
+
+---
+
+## 📥 Getting Started
+Clone this repository to start learning:  
+```bash
+git clone https://github.com/your-repo/python-for-devops.git
+cd python-for-devops
+
+```
+
+
 ## Quick Navigation
 - [Tutorials and Labs](#python-for-devops-engineers---tutorials--labs)
 - [Projects](#projects)
@@ -43,7 +60,7 @@ You can follow this course in **two ways**:
 | 20 | Python Basics |  | |  [Project - Student Management System](modules/python-basics/in-module-labs/lab_03.md)| |
 | 21 | Python Basics | [Modules and Packages](modules/python-basics/modules.md) | [Lab 🧪](modules/python-basics/in-module-labs/lab_09.md) [Lab 🧪](labs/lab_06_modules/) | | |
 | 22 | Python | [What is API](modules/python-basics/api.md) |  | | |
-| 23 | Python | [Working With API](modules/python-basics/working-with-api.md) | [Lab 🧪](modules/python-basics/in-module-labs/api.md) | | |
+| 23 | Python | [Working With API](modules/python-basics/working-with-api.md) [Headers, Authorization Tokens, and Parameters](modules/python-basics/working-with-api-2.md) | [Lab 🧪](modules/python-basics/in-module-labs/api.md) [Lab 🧪](labs/lab_13_apis/)| | |
 | 24 | Python - OOP| [OOP](modules/python-basics/oop.md) | [Lab 🧪](modules/python-basics/in-module-labs/oop.md) [Lab 🧪](modules/python-basics/in-module-labs/oop2.md) | | |
 | 25 | Python - OOP| [Inheritance & Polymorphism](modules/python-basics/inheritance-polymorphism.md) | [Lab 🧪](modules/python-basics/in-module-labs/oop3.md) | | |
 | 26 | Python - OOP| [Abstraction & Encapsulation ](modules/python-basics/abstraction-encapsulation.md) | [Lab 🧪](modules/python-basics/in-module-labs/oop4.md) | | |
@@ -117,21 +134,6 @@ You can follow this course in **two ways**:
 | 32 | Seconds Calculator | Time Operations | [View Exercise](general-exercises/get_seconds.py) |
 | 33 | JSON | Practice JSON File Operations | [View Exercise](labs/lab_19_json_yaml/) |
 
-## 🔧 Prerequisites
-Before starting, make sure you have:
-✔ **Basic Linux knowledge** (shell commands, file structure)  
-✔ **Python installed** (`>=3.8`)  
-✔ **VS Code or PyCharm** (recommended for coding)  
-
----
-
-## 📥 Getting Started
-Clone this repository to start learning:  
-```bash
-git clone https://github.com/your-repo/python-for-devops.git
-cd python-for-devops
-
-```
 
 
 </rewritten_file>
