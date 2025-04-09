@@ -562,4 +562,115 @@ animal_speak(dog)   # Output: Woof!
 
 ### Disclaimer !
 
-As a **DevOps Engineer**, you may not use **Object-Oriented Programming (OOP)** as extensively as software developers, but there are specific situations where OOP principles can be very beneficial. Here are scenarios where OOP is commonly used in DevOps:
+As a **DevOps Engineer**, you may not use **Object-Oriented Programming (OOP)** as extensively as software developers, but there are specific situations where OOP principles can be very beneficial.
+
+## Sum things up with a few examples
+
+### **Inheritance** – "Child gets from Parent"
+
+Inheritance lets a class reuse the properties and methods of another class.
+
+Think of it like a **child inheriting features from a parent**.
+
+🧠 **Example:**
+
+```python
+class Animal:
+    def speak(self):
+        print("Some sound")
+
+class Dog(Animal):
+    def bark(self):
+        print("Woof!")
+```
+
+`Dog` gets the `speak()` method from `Animal`.
+
+So you don’t have to rewrite the same code again!
+
+---
+
+### **Polymorphism** – "Same name, different behavior"
+
+Polymorphism means **many forms**.
+
+You can use the same method name, but different classes can do **different things** with it.
+
+**Example:**
+
+```python
+class Bird:
+    def sound(self):
+        print("Chirp")
+
+class Cat:
+    def sound(self):
+        print("Meow")
+
+# Use them in a loop
+for animal in [Bird(), Cat()]:
+    animal.sound()
+```
+
+Same `sound()` method — different output based on the class!
+
+---
+
+### **Encapsulation** – "Protect the data"
+
+Encapsulation means **hiding the internal state** of an object and only allowing access through methods.
+
+You protect sensitive data by keeping it **private**.
+
+**Example:**
+
+```python
+class BankAccount:
+    def __init__(self):
+        self.__balance = 0  # private variable
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+
+    def get_balance(self):
+        return self.__balance
+```
+
+The user can’t directly change `__balance`. Only through methods.
+
+---
+
+### **Abstraction** – "Show only what's needed"
+
+Abstraction means showing **only the important stuff** and hiding the rest.
+
+Like using a **TV remote** — you don’t know the inner wiring, you just press buttons.
+
+**Example:**
+
+```python
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class Circle(Shape):
+    def area(self):
+        return 3.14 * 5 * 5
+```
+
+The user works with `Shape`, but doesn’t care how `Circle` calculates the area.
+
+---
+
+### 🧠 Summary Table:
+
+| Concept | Meaning | Analogy |
+| --- | --- | --- |
+| Inheritance | Child class uses parent’s code | Kid inherits dad's traits |
+| Polymorphism | Same method, different behavior | Remote buttons: TV vs. AC |
+| Encapsulation | Hides data, access via methods | Bank vault + ATM |
+| Abstraction | Hide details, show only usage | Driving a car without knowing engine |
