@@ -203,3 +203,9 @@ if __name__ == '__main__':
 - **Q: How can I read and use the JSON data returned from an API?**
     
     **A:**
+    
+    ```python
+    data = response.json()
+    for item in data:
+        print(item['name'])  # or any other key
+    ```

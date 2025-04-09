@@ -1,6 +1,6 @@
 # Inheritance & Polymorphism
 
-![image.png](/images/oop6.png)
+![image.png](/images/oop6.png){width=600px}
 
 ### Inheritance in Python
 

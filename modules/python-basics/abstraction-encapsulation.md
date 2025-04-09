@@ -1,6 +1,6 @@
 # Abstraction & Encapsulation
 
-![image.png](/images/oop7.png)
+![image.png](/images/oop7.png){width=600px}
 
 ### Abstraction in Python
 
@@ -117,6 +117,6 @@ print(account._balance)       # Output: 500
 ### Explaining the Difference
 
 1. **Abstraction** is about hiding the implementation details and focusing on the functionality.
-    - Example: You know a `Rectangle` has an `area`, but you don’t worry about how it's calculated.
+    - Example: You know a `Rectangle` has an `area`, but you don't worry about how it's calculated.
 2. **Encapsulation** is about hiding the data and controlling access to it through methods.
     - Example: A bank account restricts direct access to the balance, ensuring it's only modified through defined methods.
