@@ -148,7 +148,6 @@ if __name__ == '__main__':
 
 ![image.png](../telegram_api_bot/assets/3.png)
 
-
 ## **Q&A**
 
 - **Q: How do I know what is the URL I need to send the API request to?**
