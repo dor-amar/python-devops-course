@@ -1,6 +1,6 @@
 # OOP - Classes & Objects
 
-![image.png](/images/oop1.png){width=400px}
+![image.png](/images/oop1.png)
 
 ### **Introduction to Object-Oriented Programming (OOP)**
 
@@ -16,25 +16,25 @@
     - **What It Is**: Think of encapsulation as putting all the important parts of a toy (like its color, size, and how it works) inside a box. The box keeps everything together and safe, so you can play with the toy without worrying about how it works inside.
     - **Example**: Imagine a `Dog` object. It has details like the dog's name and breed, and actions it can do, like `bark` or `sit`. All of this is wrapped up in one neat package—the `Dog` object.
 
-![image.png](/images/oop2.png){width=400px}
+![image.png](/images/oop2.png)
 
 1. **Abstraction**:
-    - **What It Is**: Abstraction is like a remote control for a toy car. You don't need to know how the car's engine works; you just press the button, and it moves. Abstraction hides the complicated parts and only shows you what you need to use.
-    - **Example**: When you use a `Dog` object and call the `bark()` action, you don't need to know how the dog makes the barking sound—you just know it will bark when you ask it to.
+    - **What It Is**: Abstraction is like a remote control for a toy car. You don’t need to know how the car's engine works; you just press the button, and it moves. Abstraction hides the complicated parts and only shows you what you need to use.
+    - **Example**: When you use a `Dog` object and call the `bark()` action, you don’t need to know how the dog makes the barking sound—you just know it will bark when you ask it to.
 
-![image.png](/images/oop3.png){width=400px}
+![image.png](/images/oop3.png)
 
 1. **Inheritance**:
     - **What It Is**: Inheritance is like having a family. Just like you might get your hair color from your parents, in programming, one object can inherit characteristics and behaviors from another.
     - **Example**: If we have a `Dog` object, we can create a `Puppy` object that automatically has everything a `Dog` has (like name and breed), but we can also add new things specific to puppies, like a `play()` action.
 
-![image.png](/images/oop4.png){width=400px}
+![image.png](/images/oop4.png)
 
 1. **Polymorphism**:
     - **What It Is**: Polymorphism is a fancy way of saying that different toys can share the same name for an action, but the action might be a bit different for each toy.
     - **Example**: Both the `Dog` and `Puppy` objects can have a `bark()` action, but maybe the `Dog` barks loudly and the `Puppy` barks softly. Even though they both "bark," they do it in their own way.
 
-![image.png](/images/oop5.png){width=600px}
+![image.png](/images/oop5.png)
 
 ### **When Will We Use OOP?**
 
@@ -62,8 +62,8 @@ OOP is particularly useful in scenarios where:
 
 ### **What is `self`?**
 
-- **Think of `self` as "this object"**: When you create an object from a class, `self` allows that object to refer to itself. It's like saying, "this particular object I'm working with."
-- **Why do we need `self`?**: When you define methods in a class, you want those methods to work with the data (attributes) specific to the object that calls them. `self` lets you do that by linking the method to the object's data.
+- **Think of `self` as "this object"**: When you create an object from a class, `self` allows that object to refer to itself. It’s like saying, “this particular object I’m working with.”
+- **Why do we need `self`?**: When you define methods in a class, you want those methods to work with the data (attributes) specific to the object that calls them. `self` lets you do that by linking the method to the object’s data.
 
 # **What is a constructor in Python?**
 
@@ -73,9 +73,9 @@ If you create four objects, the class constructor is called four times. Every cl
 
 ### **Constructor**
 
-Each time an object is created a method is called. That methods is named the **constructor**.
+Each time an object is created a method is called. That methods is named the **constructor**.
 
-The constructor is created with the function **init**. As parameter we write the self keyword, which refers to itself (the object). The process visually is:
+The constructor is created with the function **init**. As parameter we write the self keyword, which refers to itself (the object). The process visually is:
 
 ![](https://pythonbasics.org/wp-content/uploads/2018/03/constructor-1-700x77.png)
 
@@ -98,7 +98,7 @@ The newly created object now has the variables set, without you having to define
 
 ### **python __init__**
 
-The function **init**(self) builds your object. Its not just variables you can set here, you can call class methods too. Everything you need to initialize the object(s).
+The function **init**(self) builds your object. Its not just variables you can set here, you can call class methods too. Everything you need to initialize the object(s).
 
 Lets say you have a class Plane, which upon creation should start flying. There are many steps involved in taking off: accelerating, changing flaps, closing the wheels and so on.
 
@@ -209,7 +209,7 @@ print(bob.arms)
 ### **Instance Attributes**
 
 - **Unique to each instance**: Defined using `self` inside methods like `__init__`.
-- **Independent value per object**: Changing one doesn't affect others.
+- **Independent value per object**: Changing one doesn’t affect others.
 
 ### Examples
 
@@ -248,7 +248,7 @@ print(bob.arms)
 ### **5. Methods in Classes**
 
 - **Explanation**:
-    - Describe methods as functions that are defined inside a class and can operate on the object's attributes.
+    - Describe methods as functions that are defined inside a class and can operate on the object’s attributes.
 - **Example 4: Defining Methods**
     
     ```python
@@ -269,7 +269,7 @@ print(bob.arms)
 ### **6. Inheritance**
 
 - **Explanation**:
-    - Inheritance allows one class (child) to reuse the properties and methods of another class (parent), enabling code reuse and hierarchy creation. The child class can also extend or override the parent's functionality to provide specialized behavior.
+    - Inheritance allows one class (child) to reuse the properties and methods of another class (parent), enabling code reuse and hierarchy creation. The child class can also extend or override the parent’s functionality to provide specialized behavior.
 - **Example 5: Basic Inheritance**
     
     ```python
@@ -302,7 +302,7 @@ print(bob.arms)
 1. **Access Parent Methods:**
     - `super()` allows you to call methods from the parent class directly, even if they are overridden in the child class.
 2. **Used in Inheritance:**
-    - It's commonly used to initialize the parent class in the child class's `__init__` method.
+    - It’s commonly used to initialize the parent class in the child class’s `__init__` method.
 
 ### **Exercise: Vehicles and Inheritance**
 
@@ -373,7 +373,7 @@ Students will create a base class called `Vehicle` and then create subclasses fo
 
 ### **Example: BankAccount Class Demonstrating Encapsulation**
 
-Let's break down the provided example to illustrate how encapsulation works:
+Let’s break down the provided example to illustrate how encapsulation works:
 
 ```python
 class BankAccount:
@@ -399,10 +399,10 @@ class BankAccount:
 ### **Explanation of the Code:**
 
 1. **Private Attribute (`__balance`):**
-    - In this `BankAccount` class, the `balance` attribute is prefixed with double underscores (`__balance`). This is Python's way of indicating that `balance` is meant to be private, meaning it cannot be accessed directly from outside the class.
+    - In this `BankAccount` class, the `balance` attribute is prefixed with double underscores (`__balance`). This is Python’s way of indicating that `balance` is meant to be private, meaning it cannot be accessed directly from outside the class.
     - This encapsulation of the `balance` attribute ensures that the balance can only be modified through the methods provided (`deposit` and `withdraw`), which control how the balance is updated.
 2. **Public Methods (`deposit` and `withdraw`):**
-    - The `deposit` and `withdraw` methods are public methods that allow interaction with the `__balance` attribute in a controlled manner. These methods ensure that only valid operations are performed (e.g., you can't deposit a negative amount or withdraw more than the available balance).
+    - The `deposit` and `withdraw` methods are public methods that allow interaction with the `__balance` attribute in a controlled manner. These methods ensure that only valid operations are performed (e.g., you can’t deposit a negative amount or withdraw more than the available balance).
     - These methods also provide feedback to the user about the current state of the balance after each operation, but they do so without exposing the balance directly.
 3. **Usage Example:**
     - When `account.deposit(1000)` is called, the method checks that the amount is positive, adds it to the `__balance`, and prints the new balance.
@@ -420,12 +420,12 @@ class BankAccount:
 ### **How This Demonstrates Encapsulation:**
 
 - **Encapsulation** is shown here by the way `__balance` is hidden from direct access, ensuring that all interactions with the balance are done through the `deposit` and `withdraw` methods. This protects the balance from being accidentally or maliciously modified.
-- **Abstraction** is also at play because users of the `BankAccount` class don't need to know how the balance is managed internally; they just need to know how to deposit and withdraw money.
+- **Abstraction** is also at play because users of the `BankAccount` class don’t need to know how the balance is managed internally; they just need to know how to deposit and withdraw money.
 
 ### **Key Takeaways:**
 
 - **Encapsulation** keeps the internal state of an object safe by hiding its attributes and only allowing controlled access through methods.
-- **Abstraction** simplifies the use of objects by hiding complex details and exposing only what's necessary for interaction.
+- **Abstraction** simplifies the use of objects by hiding complex details and exposing only what’s necessary for interaction.
 
 ## **Polymorphism**
 
@@ -434,11 +434,11 @@ class BankAccount:
 ### **Simple Explanation:**
 
 - **Polymorphism** allows you to define a method in a parent class and then override it in child classes. Despite having the same method name, each child class can implement it differently.
-- It's like having a universal command that can be understood and executed differently by different types of objects.
+- It’s like having a universal command that can be understood and executed differently by different types of objects.
 
 ### **Example: Polymorphism in Action with the `speak` Method**
 
-Here's how the provided example demonstrates polymorphism:
+Here’s how the provided example demonstrates polymorphism:
 
 ```python
 class Bird:
@@ -472,8 +472,8 @@ animal_speak(dog)   # Output: Woof!
     - This function takes an `animal` as a parameter and calls its `speak()` method.
     - Because of polymorphism, you can pass either a `Bird` object or a `Dog` object to this function, and it will correctly call the `speak()` method of the appropriate class.
 3. **Using Polymorphism:**
-    - When `animal_speak(bird)` is called, it prints `"Tweet!"` because the `bird` object is an instance of the `Bird` class, so the `Bird` class's `speak()` method is used.
-    - When `animal_speak(dog)` is called, it prints `"Woof!"` because the `dog` object is an instance of the `Dog` class, so the `Dog` class's `speak()` method is used.
+    - When `animal_speak(bird)` is called, it prints `"Tweet!"` because the `bird` object is an instance of the `Bird` class, so the `Bird` class’s `speak()` method is used.
+    - When `animal_speak(dog)` is called, it prints `"Woof!"` because the `dog` object is an instance of the `Dog` class, so the `Dog` class’s `speak()` method is used.
     
     ```python
     bird = Bird()
