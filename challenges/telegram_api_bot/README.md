@@ -35,8 +35,6 @@ pip install python-telegram-bot==13.15
 
 ![image.png](../telegram_api_bot/assets/1.png)
 
-Token: 7211192287:AAGCF8H5OS6eA9FfP957Xn-xiYfd3lN0f00
-
 ---
 
 ### Start with a simple Python Script: `bot.py`
