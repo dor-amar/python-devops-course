@@ -68,7 +68,7 @@ cd python-for-devops
 |  | **Flask, Databases and SQL** | | | | |
 | 28 | Python - Flask | [Flask Introduction](modules/python-basics/flask-intro.md) |  |  | |
 | 29 | Python - Flask | [Flask Hello World](modules/python-basics/flask-hello-world.md) |  |  | |
-| 30 | Python - Flask | [Flask Routing, Templates, and Forms](modules/python-basics/flask-route-template-form.md) |  |  | |
+| 30 | Python - Flask | [Flask Routing, Templates, and Forms](modules/python-basics/flask-route-template-form.md) | [Lab](modules/python-basics/in-module-labs/flask-lab.md) |  | |
 | 31 | Python - Flask |  |  | [Add a Search Feature to the Flask API](modules/python-basics/in-module-labs/flask-project.md) |  |
 | 32 | Python - DB + SQL | [Database + SQL](modules/python-basics/db-sql.md) |  |  |  |
 | 33 | Python - DB + SQL | [SQLite3](modules/python-basics/sqlite3.md) |  |  |  |
