@@ -92,8 +92,6 @@ CREATE TABLE IF NOT EXISTS Users (
 Add records to the table.
 
 ```python
-python
-Copy code
 # Insert a single record
 cursor.execute("""
 INSERT INTO Users (name, age, email)
@@ -122,8 +120,6 @@ connection.commit()
 Query and fetch records from the table.
 
 ```python
-python
-Copy code
 # Fetch all records
 cursor.execute("SELECT * FROM Users")
 rows = cursor.fetchall()
@@ -145,8 +141,6 @@ for row in rows:
 Modify existing records.
 
 ```python
-python
-Copy code
 # Update a user's age
 cursor.execute("""
 UPDATE Users
@@ -164,8 +158,6 @@ connection.commit()
 Remove records from the table.
 
 ```python
-python
-Copy code
 # Delete a user
 cursor.execute("""
 DELETE FROM Users
@@ -182,8 +174,6 @@ connection.commit()
 Always close the database connection when done.
 
 ```python
-python
-Copy code
 connection.close()
 
 ```
@@ -193,8 +183,6 @@ connection.close()
 ### Full Example:
 
 ```python
-python
-Copy code
 import sqlite3
 
 # Connect to the database
