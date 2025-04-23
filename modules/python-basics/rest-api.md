@@ -201,3 +201,8 @@ To put this API online:
     - Invalid JSON
 3. Implement `PATCH` to only update part of a record (e.g., change email without touching name)
 4. Add an `id` field instead of using `name` for identification
+
+---
+## Navigation
+
+[⬅️ Previous: Setting Up Flask with SQLite](flask-sqlite3.md)

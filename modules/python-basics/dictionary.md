@@ -413,3 +413,8 @@ In Python, dictionaries are a go-to data structure when you need to store data i
     
 
 Dictionaries offer fast, constant-time complexity for lookups, making them suitable for data where you need to search or retrieve values by keys efficiently.
+
+---
+## Navigation
+
+[⬅️ Previous: List, Tuple, Set](list.md) | [Next: Dictionary VS JSON ➡️](dictionary-vs-json.md)

@@ -224,3 +224,8 @@ Create `templates/greet.html`:
 ```html
 <h1>Hello, {{ name }}!</h1>
 ```
+
+---
+## Navigation
+
+[⬅️ Previous: Flask - Hello World](flask-hello-world.md) | [Next: Database + SQL ➡️](db-sql.md)

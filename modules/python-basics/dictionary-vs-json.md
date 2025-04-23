@@ -73,3 +73,8 @@ The main difference between dictionaries in Python and JSON (JavaScript Object N
 | File Format | Not specific to `.json` | Saved in `.json` files |
 
 In summary, dictionaries are native to Python and more flexible, whereas JSON is a standardized format for data sharing across different platforms and languages.
+
+---
+## Navigation
+
+[⬅️ Previous: Basics of Dictionaries](dictionary.md) | [Next: Exception Handling in Python ➡️](exception-handling.md)

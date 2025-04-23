@@ -141,3 +141,8 @@ for i in [1,2,3]:
   result = get_square(i) 
   print('Square of',i, '=',result)
 ```
+
+---
+## Navigation
+
+[⬅️ Previous: **Python Type Casting**](type-casting.md) | [Next: If Else ➡️](if-else.md)

@@ -62,3 +62,8 @@ print("Your favorite color is", color + "!")
 - Use `int()` or `float()` to convert input to numbers.
 - Use `split()` to handle multiple inputs in one line.
 - `input()` is useful for interactive programs where user input is needed.
+
+---
+## Navigation
+
+[⬅️ Previous: Strings, Numbers, and Indexing](string-num-index.md) | [Next: **Python Type Casting** ➡️](type-casting.md)

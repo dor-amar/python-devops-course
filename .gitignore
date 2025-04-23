@@ -8,3 +8,7 @@ practice/*
 *.doc
 *.docx
 *.ppt
+
+# Venv 
+venv/
+**/.venv/

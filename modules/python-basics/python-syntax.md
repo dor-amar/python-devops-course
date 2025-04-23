@@ -149,3 +149,8 @@ x = "hello"
 print(type(x))           # <class 'str'>
 print(isinstance(x, str))# True
 ```
+
+---
+## Navigation
+
+[⬅️ Previous: Introduction to Python](intro-to-python.md) | [Next: Variable Declaration and Assignment in Python ➡️](variables.md)

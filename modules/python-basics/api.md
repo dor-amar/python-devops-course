@@ -49,7 +49,7 @@ The API (waiter) handles your request and brings back a response without you nee
 ### **Key Features of an API**
 
 1. **Connects Systems**: It allows one program to talk to another.
-2. **Simplifies Use**: You don’t need to know how the system works internally.
+2. **Simplifies Use**: You don't need to know how the system works internally.
 3. **Reusable**: APIs can be used by different programs for the same purpose.
 
 ---
@@ -75,3 +75,8 @@ print("Temperature in London:", data['current']['temp_c'], "°C")
 ### **In Simple Words**
 
 An API is like a bridge or waiter that helps two programs talk to each other, making it easier for you to get data or perform tasks without worrying about the technical details.
+
+---
+## Navigation
+
+[⬅️ Previous: if **name** == "**main**"](modules.md) | [Next: Working with APIs in Python ➡️](working-with-api.md)

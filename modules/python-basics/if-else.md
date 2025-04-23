@@ -325,3 +325,8 @@ else:
         print("No discount available.")
     
     ```
+
+---
+## Navigation
+
+[⬅️ Previous: function with two arguments](functions.md) | [Next: **Loops in Python** ➡️](loops.md)

@@ -233,3 +233,8 @@ my_list.append(4)  # The list object is modified in place
 
 1. Create a variable and assign it to another.
 2. Use `sys.getrefcount()` to monitor how reference counts change.
+
+---
+## Navigation
+
+[⬅️ Previous: Python Fundamentals - Data Types & Syntax](python-syntax.md) | [Next: Strings, Numbers, and Indexing ➡️](string-num-index.md)

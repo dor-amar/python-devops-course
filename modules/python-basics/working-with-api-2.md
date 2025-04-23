@@ -343,3 +343,8 @@ else:
     print("Login failed:", response.status_code, response.text)
 
 ```
+
+---
+## Navigation
+
+[⬅️ Previous: Working with APIs in Python](working-with-api.md) | [Next: OOP - Classes & Objects ➡️](oop.md)

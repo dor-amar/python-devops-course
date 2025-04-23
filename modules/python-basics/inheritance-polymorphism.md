@@ -275,3 +275,8 @@ print(f"Rectangle area: {rectangle.area()}")  # Calls Rectangle's area method
     - Example: Dog and Cat are specific types of Animal.
 2. **Polymorphism** is about using a unified interface to interact with objects of different types.
     - Example: Both Dog and Cat can "speak," but their behavior differs based on their specific implementation.
+
+---
+## Navigation
+
+[⬅️ Previous: OOP - Classes & Objects](oop.md) | [Next: Abstraction & Encapsulation ➡️](abstraction-encapsulation.md)

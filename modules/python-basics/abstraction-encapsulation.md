@@ -319,3 +319,8 @@ print(f"Current book count is: {library.get_book_count()}")
     - Example: You know a `Rectangle` has an `area`, but you don’t worry about how it's calculated.
 2. **Encapsulation** is about hiding the data and controlling access to it through methods.
     - Example: A bank account restricts direct access to the balance, ensuring it's only modified through defined methods.
+
+---
+## Navigation
+
+[⬅️ Previous: Inheritance & Polymorphism](inheritance-polymorphism.md) | [Next: Flask Introduction ➡️](flask-intro.md)

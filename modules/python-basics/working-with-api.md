@@ -643,3 +643,8 @@ with open('lower_middle_income_countries.json', 'w') as f:
 ```
 
 This script sends a request to an API to get economic data about Sub-Saharan African countries. Sometimes the response is a string instead of a usable Python object, so we check its type. If it’s a string, we convert it into a list of dictionaries using `json.loads()`. Once we have the data, we can loop through it and print specific fields — like the country’s short name and income group. We also print the dictionary keys to see what data is available. Then, we filter countries by their income group (e.g., "Lower middle income" or "Upper middle income") and store their names in a list. Finally, we show how to save the full data (not just names) for the "Lower middle income" countries into a JSON file. This helps students learn how to handle JSON data, explore it, filter it, and store it properly.
+
+---
+## Navigation
+
+[⬅️ Previous: What is an API ?](api.md) | [Next: Working with API Headers, Authorization Tokens, and Parameters ➡️](working-with-api-2.md)

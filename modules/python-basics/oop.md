@@ -674,3 +674,8 @@ The user works with `Shape`, but doesn’t care how `Circle` calculates the area
 | Polymorphism | Same method, different behavior | Remote buttons: TV vs. AC |
 | Encapsulation | Hides data, access via methods | Bank vault + ATM |
 | Abstraction | Hide details, show only usage | Driving a car without knowing engine |
+
+---
+## Navigation
+
+[⬅️ Previous: Working with API Headers, Authorization Tokens, and Parameters](working-with-api-2.md) | [Next: Inheritance & Polymorphism ➡️](inheritance-polymorphism.md)

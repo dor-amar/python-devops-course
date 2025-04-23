@@ -2,6 +2,7 @@
 
 ![image.png](/images/flask.png)
 [What is Flask ?](https://pythonbasics.org/what-is-flask-python/)
+[Flask Docs](https://flask.palletsprojects.com/en/stable/)
 ### Introduction to Flask in Python
 
 **Objective**: By the end of this lecture, students should understand the basics of Flask, how to set up a simple web server, and create basic routes to handle different URLs.
@@ -188,3 +189,8 @@ For more complex HTML, it's better to use templates (stored in separate HTML fil
     - We created routes to handle different URLs.
     - We learned how to return both plain text and HTML from routes.
     - We briefly touched on using templates to manage HTML more effectively.
+
+---
+## Navigation
+
+[⬅️ Previous: Abstraction & Encapsulation](abstraction-encapsulation.md) | [Next: Flask - Hello World ➡️](flask-hello-world.md)

@@ -584,3 +584,8 @@ for task in tasks:
 conn.close()
 
 ```
+
+---
+## Navigation
+
+[⬅️ Previous: Database + SQL](db-sql.md) | [Next: Setting Up Flask with SQLite ➡️](flask-sqlite3.md)

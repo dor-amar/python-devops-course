@@ -173,3 +173,8 @@ Deactivate when done:
 ```
 deactivate
 ```
+
+---
+## Navigation
+
+[⬅️ Previous: **Shell vs Python**](shell-vs-python.md) | [Next: Python Fundamentals - Data Types & Syntax ➡️](python-syntax.md)

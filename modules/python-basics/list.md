@@ -360,3 +360,8 @@ print("Set lookup:", time.time() - start)
 List and Tuple take milliseconds (ms) to look up the value.
 
 Set takes microseconds (μs) — about 1,000x faster!
+
+---
+## Navigation
+
+[⬅️ Previous: **Loops in Python**](loops.md) | [Next: Basics of Dictionaries ➡️](dictionary.md)

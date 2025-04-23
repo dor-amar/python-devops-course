@@ -262,7 +262,7 @@ with open('my_first_file.txt', 'r') as file:
     content = file.read().lower()
     search_word_lower = search_word.lower()
     word_count = content.count(search_word_lower)
-    print(f"The word '{search_word}' (case-insensitive) appears {word_count
+    print(f"The word '{search_word}' (case-insensitive) appears {word_count} times in the file.")
 
 ```
 
@@ -296,7 +296,7 @@ with open('image.png', 'rb') as file:
 
 ### Example: Working with Files
 
-Let’s walk through a real-world example of working with files. Suppose you have a text file called `students.txt` that contains a list of student names, one per line. You want to read this file, count the number of students, and then write this count to a new file called `count.txt`.
+Let's walk through a real-world example of working with files. Suppose you have a text file called `students.txt` that contains a list of student names, one per line. You want to read this file, count the number of students, and then write this count to a new file called `count.txt`.
 
 **students.txt:**
 
@@ -332,4 +332,9 @@ Number of students: 4
 
 - **Always close files**: Either explicitly using `close()` or by using the `with` statement.
 - **Be mindful of file modes**: Using the wrong mode can lead to unexpected data loss (e.g., using `'w'` instead of `'a'`).
-- **Handle exceptions**: When working with files, especially in production code, it’s good practice to handle exceptions (e.g., file not found).
+- **Handle exceptions**: When working with files, especially in production code, it's good practice to handle exceptions (e.g., file not found).
+
+---
+## Navigation
+
+[⬅️ Previous: Exception Handling in Python](exception-handling.md) | [Next: Working with JSON Files in Python ➡️](json.md)

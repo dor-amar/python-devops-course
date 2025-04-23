@@ -40,10 +40,10 @@ It looks just like a Python dictionary — and that's the key idea!
 | `array` | A list of values wrapped in square brackets (`[]`) |
 | `string` | Text wrapped in double quotes (`""`) |
 | `number` | Integers or floating-point numbers |
-| `boolean` | Either `true` or `false` without quotes |
-| `null` | Represents a [null value](https://realpython.com/null-in-python/), written as `null` |
+| `boolean` | Either `true` or `false` without quotes |
+| `null` | Represents a [null value](https://realpython.com/null-in-python/), written as `null` |
 
-Just like in dictionaries and lists, you’re able to nest data in JSON objects and arrays. For example, you can include an object as the value of an object. Also, you’re free to use any other allowed value as an item in a JSON array.
+Just like in dictionaries and lists, you're able to nest data in JSON objects and arrays. For example, you can include an object as the value of an object. Also, you're free to use any other allowed value as an item in a JSON array.
 
 ---
 
@@ -89,11 +89,11 @@ print(type(json_string))
 {"name": "Alice", "age": 30, "is_admin": true, "skills": ["python", "devops"]}
 ```
 
-After importing the `json` module, you can use [`.dumps()`](https://docs.python.org/3/library/json.html#json.dumps) to convert a Python dictionary to a **JSON-formatted string**, which represents a JSON object.
+After importing the `json` module, you can use [`.dumps()`](https://docs.python.org/3/library/json.html#json.dumps) to convert a Python dictionary to a **JSON-formatted string**, which represents a JSON object.
 
-It’s important to understand that when you use `.dumps()`, you get a Python string in return. In other words, you don’t create any kind of JSON data type. The result is similar to what you’d get if you used Python’s built-in [`str()` function](https://realpython.com/python-strings/)
+It's important to understand that when you use `.dumps()`, you get a Python string in return. In other words, you don't create any kind of JSON data type. The result is similar to what you'd get if you used Python's built-in [`str()` function](https://realpython.com/python-strings/)
 
-**Note:** When you convert a dictionary to JSON, the dictionary keys will always be strings in JSON.
+**Note:** When you convert a dictionary to JSON, the dictionary keys will always be strings in JSON.
 
 ```python
 import json
@@ -116,7 +116,7 @@ print(json_string)
 
 Notice that the **integer keys** `1`, `2`, `3` are now **strings** `"1"`, `"2"`, `"3"` in the JSON output.
 
-When you use `json.dumps()`, you can use [additional arguments](https://docs.python.org/3/library/json.html#json.dumps) to control the look of the resulting JSON-formatted string
+When you use `json.dumps()`, you can use [additional arguments](https://docs.python.org/3/library/json.html#json.dumps) to control the look of the resulting JSON-formatted string
 
 - `indent` – adds line breaks and indentation (pretty print)
 - `sort_keys` – sorts keys alphabetically
@@ -173,7 +173,7 @@ print(json.dumps(emoji_data, ensure_ascii=False))
 
 The JSON format can come in handy when you want to save data outside of your Python program. Instead of spinning up a database, you may decide to use a JSON file to store data for your workflows. Again, Python has got you covered.
 
-The `json.dump()` function has two required arguments:
+The `json.dump()` function has two required arguments:
 
 1. The object you want to write
 2. The file you want to write into
@@ -215,9 +215,9 @@ json.dump(data, f, indent=4)
 
 ## **Reading JSON With Python**
 
-In the former sections, you learned how to serialize Python data into JSON-formatted strings and JSON files. Now, you’ll see what happens when you load JSON data back into your Python program.
+In the former sections, you learned how to serialize Python data into JSON-formatted strings and JSON files. Now, you'll see what happens when you load JSON data back into your Python program.
 
-In parallel to `json.dumps()` and `json.dump()`, the `json` library provides two functions to deserialize JSON data into a Python object:
+In parallel to `json.dumps()` and `json.dump()`, the `json` library provides two functions to deserialize JSON data into a Python object:
 
 The **two main ways** to read JSON depending on the source:
 
@@ -225,10 +225,10 @@ The **two main ways** to read JSON depending on the source:
 | --- | --- |
 | Reading JSON from a file | `json.load()` |
 | Reading JSON from a string | `json.loads()` |
-1. `json.loads()`: To deserialize a string, bytes, or [byte array](https://realpython.com/python-mutable-vs-immutable-types/#byte-arrays) instances
+1. `json.loads()`: To deserialize a string, bytes, or [byte array](https://realpython.com/python-mutable-vs-immutable-types/#byte-arrays) instances
 2. `json.load()`: To deserialize a text file or a binary file
 
-As a rule of thumb, you work with `json.loads()` when your data is already present in your Python program. You use `json.load()` with external files that are saved on your disk.
+As a rule of thumb, you work with `json.loads()` when your data is already present in your Python program. You use `json.load()` with external files that are saved on your disk.
 
 ### **Read JSON From a File**
 
@@ -308,7 +308,7 @@ Just provide the **correct path** relative to where your Python script is runnin
 
 ---
 
-### If the File Doesn’t Exist
+### If the File Doesn't Exist
 
 Add error handling to avoid crashes:
 
@@ -331,7 +331,7 @@ except json.JSONDecodeError:
 
 ---
 
-### **Validate** JSON syntax
+### **Validate** JSON syntax
 
 You can use the built-in `json` module and attempt to parse the data using `json.loads()` (for strings) or `json.load()` (for files).
 
@@ -357,3 +357,8 @@ except json.JSONDecodeError as e:
 
 - Python Docs: https://docs.python.org/3/library/json.html
 - Real Python JSON tutorial: https://realpython.com/python-json/
+
+---
+## Navigation
+
+[⬅️ Previous: Basic File Operations](files.md) | [Next: if **name** == "**main**" ➡️](modules.md)

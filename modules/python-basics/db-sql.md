@@ -310,3 +310,8 @@ JOIN Orders ON Users.id = Orders.user_id;
 3. Retrieve all products with a price greater than $10.
 4. Update the quantity of a product.
 5. Delete a product with a specific `id`.
+
+---
+## Navigation
+
+[⬅️ Previous: Flask Route Template Form](flask-route-template-form.md) | [Next: SQLite3 ➡️](sqlite3.md)

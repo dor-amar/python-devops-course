@@ -46,7 +46,7 @@ if __name__ == "__main__":
 ### Why Use It?
 
 - **Running as a Script:** If you run the file directly (like `python myfile.py`), the code inside this block will execute. This is useful for testing or running the script on its own.
-- **Importing as a Module:** If you import the file into another script, the code inside this block **will not run**. This allows you to use functions or classes from the file without accidentally running the script’s main code.
+- **Importing as a Module:** If you import the file into another script, the code inside this block **will not run**. This allows you to use functions or classes from the file without accidentally running the script's main code.
 
 ### Simple Example:
 
@@ -93,9 +93,9 @@ A **module** in Python is a file that contains Python code — functions, variab
 
 ### **Import modules**
 
-You can load a module with the **import** keyword.
+You can load a module with the **import** keyword.
 
-In the example below we load the *os module*. This is short for operating system, so you can do system tasks.
+In the example below we load the *os module*. This is short for operating system, so you can do system tasks.
 
 ```
 import os
@@ -122,7 +122,7 @@ from moduleimport function
 
 ---
 
-There’s a module named *time* which has all kind of functionality for time: get the date, hour, minute, second and so on. That’s quite a lot of functionality.
+There's a module named *time* which has all kind of functionality for time: get the date, hour, minute, second and so on. That's quite a lot of functionality.
 
 Lets say you want the program to wait 2 seconds. If you want, you can import a specific function instead of the whole module.
 
@@ -407,3 +407,8 @@ print(os.getcwd())
 - [Python Official Docs – Modules](https://docs.python.org/3/tutorial/modules.html)
 - [Python Built-in Modules List](https://docs.python.org/3/py-modindex.html)
 - [pip documentation](https://pip.pypa.io/en/stable/)
+
+---
+## Navigation
+
+[⬅️ Previous: Working with JSON Files in Python](json.md) | [Next: What is an API ? ➡️](api.md)

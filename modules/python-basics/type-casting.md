@@ -184,3 +184,8 @@ print(type(result))  # Output: <class 'float'>
 1. Always validate inputs before converting types to avoid errors.
 2. Use explicit type casting when the data type conversion isn't obvious.
 3. Be cautious about precision loss when converting between numeric types.
+
+---
+## Navigation
+
+[⬅️ Previous: Input](user-input.md) | [Next: function with two arguments ➡️](functions.md)

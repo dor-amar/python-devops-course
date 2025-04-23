@@ -163,3 +163,8 @@ app.run(host='0.0.0.0', port=81)
 Enter the url [*http://localhost:81/*](http://localhost:81/) in your web browser.
 
 Code summary:
+
+---
+## Navigation
+
+[⬅️ Previous: Flask Introduction](flask-intro.md) | [Next: Flask Route Template Form ➡️](flask-route-template-form.md)

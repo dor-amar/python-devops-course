@@ -781,3 +781,8 @@ Print the Fibonacci series up to a given number (e.g., `10`).
 - Use `for` loops for sequences and `while` loops for condition-based iterations.
 - Loop control statements (`break`, `continue`, `else`) give you fine-grained control over the loop flow.
 - Always test your loops to avoid infinite iterations.
+
+---
+## Navigation
+
+[⬅️ Previous: If Else](if-else.md) | [Next: List, Tuple, Set ➡️](list.md)

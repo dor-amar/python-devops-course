@@ -293,3 +293,8 @@ if __name__ == '__main__':
     app.run(port=8080, debug=True)
 
 ```
+
+---
+## Navigation
+
+[⬅️ Previous: SQLite3](sqlite3.md) | [Next: Building a REST API with Flask ➡️](rest-api.md)

@@ -291,3 +291,8 @@ print("Length:", len(sentence))
 - Create a string that contains a sentence. Replace one word in the sentence with another word and print the new sentence.
 
 **Example**:
+
+---
+## Navigation
+
+[⬅️ Previous: Variable Declaration and Assignment in Python](variables.md) | [Next: Input ➡️](user-input.md)
