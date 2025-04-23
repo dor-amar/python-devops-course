@@ -12,3 +12,6 @@ practice/*
 # Venv 
 venv/
 **/.venv/
+
+# Scripts
+scripts/
