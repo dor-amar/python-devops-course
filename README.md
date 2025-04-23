@@ -69,13 +69,18 @@ cd python-for-devops
 | 28 | Python - Flask | [Flask Introduction](modules/python-basics/flask-intro.md) |  |  | |
 | 29 | Python - Flask | [Flask Hello World](modules/python-basics/flask-hello-world.md) |  |  | |
 | 30 | Python - Flask | [Flask Routing, Templates, and Forms](modules/python-basics/flask-route-template-form.md) | [Lab](modules/python-basics/in-module-labs/flask-lab.md) |  | |
-| 31 | Python - Flask |  |  | [Add a Search Feature to the Flask API](modules/python-basics/in-module-labs/flask-project.md) |  |
+| 31 | Python - Flask | [Lab](modules/python-basics/in-module-labs/flask-lab-2.md) |  | [Add a Search Feature to the Flask API](modules/python-basics/in-module-labs/flask-project.md) |  |
 | 32 | Python - DB + SQL | [Database + SQL](modules/python-basics/db-sql.md) |  |  |  |
 | 33 | Python - DB + SQL | [SQLite3](modules/python-basics/sqlite3.md) |  |  |  |
-| 34 | Python - DB + SQL | [Setting Up Flask with SQLite3](modules/python-basics/flask-sqlite3.md) |  |  |  |
-| 35 | Python - Flask | [REST API](modules/python-basics/rest-api.md) |  |  |  |
-| 36 | Python - Flask |  |  | [Flask + SQLite To-Do App with NGINX](modules/python-basics/in-module-labs/flask-project-2.md)  |  |
-| 37 | Python - Flask |  |  | [Flask + Discord](modules/python-basics/in-module-labs/flask-project-3.md)  |  |
+| 34 | Python - DB + SQL | [SQLite Browser](modules/python-basics/sqlite-browser.md) |  |  |  |
+| 35 | Python - DB + SQL | [Setting Up Flask with SQLite3](modules/python-basics/flask-sqlite3.md) |  |  |  |
+| 36 | Python - Flask | [REST API](modules/python-basics/rest-api.md) |  |  |  |
+| 37 | Python - Flask |  |  | [Flask + SQLite To-Do App with NGINX](modules/python-basics/in-module-labs/flask-project-2.md)  |  |
+| 38 | Milestone |  |  | [Flask + Discord](modules/python-basics/in-module-labs/flask-project-3.md)  |  |
+| 39 | Python - DB | [MongoDB with pymongo](modules/python-basics/mongodb.md) |  |   |  |
+| 40 | Python - DB | [Where to save a connection string ?](modules/python-basics/conn-string.md) |  |   |  |
+| 41 | Python - DB | [MongoDB(NoSQL) vs SQL](modules/python-basics/mongo-vs-sql.md) |  |   |  |
+| 42 | Python | [Environment Variables](modules/python-basics/env.md) |  |   |  |
 
 
 
