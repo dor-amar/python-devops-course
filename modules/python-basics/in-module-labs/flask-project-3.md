@@ -1,5 +1,7 @@
 This project involves creating a Flask-based web application that integrates with **Discord** using its API and stores messages in an **SQLite database**.
 
+**If you are more familiar with Slack and want to use it for this project - go for it**
+
 This task is more challenging than what we’ve done so far — and that’s the point!
 
 It’s designed to push you a bit further. Don’t worry if you get stuck — feel free to use the internet, documentation, or AI tools to help you solve problems along the way.
