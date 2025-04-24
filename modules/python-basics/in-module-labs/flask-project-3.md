@@ -1,5 +1,18 @@
 This project involves creating a Flask-based web application that integrates with **Discord** using its API and stores messages in an **SQLite database**.
 
+This task is more challenging than what we’ve done so far — and that’s the point!
+
+It’s designed to push you a bit further. Don’t worry if you get stuck — feel free to use the internet, documentation, or AI tools to help you solve problems along the way.
+
+📝 When you submit your project, please include a file called reflection.md where you:
+
+Describe what the project was about
+
+Explain what you were asked to do
+
+Reflect on the challenges you faced and how you solved them
+
+
 **Discord Webhook:** 
 
 [https://www.svix.com/resources/guides/how-to-make-webhook-discord/#:~:text=Click the arrow next to,icon and name your webhook](https://www.svix.com/resources/guides/how-to-make-webhook-discord/#:~:text=Click%20the%20arrow%20next%20to,icon%20and%20name%20your%20webhook).
@@ -58,114 +71,72 @@ message-relay/
 ```
 
 ---
+📝 Here's a suggested to-do list to guide your development — but you're not limited to it.
 
-## Setup Instructions
+Feel free to freestyle and build the app however you like - **there is not a one write answer to solve this project** for example - using .env, adding a ui or other functionalities.
 
-### Set up a Virtual Environment
 
-```bash
-python3 -m venv venv
-source venv/bin/activate 
-```
+# To-Do List 
+## 1️⃣ Setup
 
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### `requirements.txt` should include:
-
-```
-Flask
-discord-webhook
-```
-
-> If you're missing the file, run this to generate it:
-> 
-
-```bash
-pip freeze > requirements.txt
-```
+- [ ]  Create project folder and virtual environment
+- [ ]  Install: `Flask`, `discord-webhook`
+- [ ]  Add your Discord Webhook URL to `app.py`
 
 ---
 
-### Configure Discord Webhook
+## 2️⃣ Build the App
 
-Edit `app.py` and set your actual Discord webhook:
-
-```python
-DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/....'
-```
-
----
-
-### Run the Application
-
-```bash
-python app.py
-```
-
-Visit http://localhost:5000
+- [ ]  Create `app.py` with a basic Flask setup
+- [ ]  Create `/` route to serve an HTML form
+- [ ]  Create `/input_text` route to:
+    - [ ]  Get message input
+    - [ ]  Send it to Discord via webhook
+    - [ ]  Save it in SQLite (`messages.db`)
 
 ---
 
-## `index.html` (Example Template)
+## 3️⃣ Database
 
-Place this file inside the `templates/` folder:
-
-```html
-<!-- templates/index.html -->
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Message Relay</title>
-</head>
-<body>
-    <h1>Send a Message to Discord</h1>
-    <form id="messageForm">
-        <input type="text" name="text" placeholder="Your message" required>
-        <button type="submit">Send</button>
-    </form>
-    <div id="response"></div>
-
-    <script>
-        document.getElementById('messageForm').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const formData = new FormData(e.target);
-            const response = await fetch('/input_text', {
-                method: 'POST',
-                body: formData
-            });
-            const result = await response.json();
-            document.getElementById('response').innerText = result.message;
-        });
-    </script>
-</body>
-</html>
-
-```
+- [ ]  Create `messages` table: `id`, `content`, `timestamp`
+- [ ]  Write a function to save messages
+- [ ]  Write a `/get_messages` route to return messages from the last 30 minutes (as JSON)
 
 ---
 
-## Test the Endpoints
+## 4️⃣ Frontend
 
-### 1. `/input_text` – Submit a Message
+- [ ]  Create `index.html` with a form to submit messages
+- [ ]  Use JavaScript to send the form via fetch and show the response
 
-```bash
-curl -X POST -F "text=Hello from cURL!" http://localhost:5000/input_text
+---
+
+## 5️⃣ Final Steps
+
+- [ ]  Test with cURL and browser
+- [ ]  Create `reflection.md` — explain what you built and how you solved issues
+
+### **End Goal**
+
+Build a Flask web app that lets users send messages to a Discord channel **and** stores those messages in a local SQLite database, with an option to view recent ones.
+
+---
+
+### **Project Flow Diagram**
+
 ```
+[User] ──▶ [Flask Web App]
+             │
+             ├──▶ [Send to Discord (Webhook)]
+             │
+             ├──▶ [Save to SQLite Database]
+             │
+             └──▶ [Return Confirmation + Show Recent Messages]
 
-### 2. `/get_messages` – View Recent Messages
-
-```bash
-curl http://localhost:5000/get_messages
 ```
 
 ## **Snnipets to help you**
-
-> You can use some examples we did in the class
-> 
+<details><summary>Click here for some hints</summary> 
 
 ### ✅ The Database
 
@@ -196,13 +167,11 @@ def send_to_discord(text):
 ### ✅ Saving to SQLite
 
 ```python
-python
-CopyEdit
 def save_to_database(text):
     conn = get_db_connection()
     cursor = conn.cursor()
     cursor.execute('INSERT INTO messages (content, timestamp) VALUES (?, ?)', (text, datetime.now()))
     conn.commit()
     conn.close()
-
 ```
+</details>

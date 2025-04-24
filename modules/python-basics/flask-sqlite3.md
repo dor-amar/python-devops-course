@@ -147,7 +147,6 @@
 3. Inside the `templates` folder, create a file named `users.html` and add the following content:
     
     ```html
-    htmlCopy code
     <!DOCTYPE html>
     <html>
     <head>

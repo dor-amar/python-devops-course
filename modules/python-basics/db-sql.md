@@ -6,6 +6,10 @@
 
 A **database** is an organized collection of data that is stored and managed in a way that makes it easy to access, update, and retrieve information. It serves as a central location where data is stored so that it can be used efficiently for various purposes, such as querying, reporting, and analysis.
 
+A **database** is like a **digital storage room** for your application’s data.
+
+Whenever your app needs to **remember** something (users, tasks, posts), you store it in a database.
+
 ### Key Features of a Database:
 
 1. **Organized Structure**:
@@ -19,19 +23,16 @@ A **database** is an organized collection of data that is stored and managed in 
 5. **Security**:
     - Access to the database can be controlled to protect sensitive information.
 
-## What is SQL ?
+---
 
+## Two Main Types of Databases
 
-![image.png](/images/dbsql2.png)
+| Type | Description | Example Databases |
+| --- | --- | --- |
+| **SQL** | Structured data, uses tables & relationships | SQLite, PostgreSQL, MySQL |
+| **NoSQL** | Flexible, uses JSON-like data or key-value | MongoDB, Redis, Firebase |
 
-SQL (Structured Query Language) is a programming language used to interact with databases. In simple terms, it helps you:
-
-1. **Store data**: Add new information to a database (e.g., saving user details or product listings).
-2. **Retrieve data**: Get specific information from a database (e.g., finding a user's profile or a list of orders).
-3. **Update data**: Modify existing information in a database (e.g., updating a user’s email address).
-4. **Delete data**: Remove information from a database (e.g., deleting an account or an old record).
-
-### Types of Databases:
+### Types of Databases examples:
 
 1. **Relational Databases (SQL)**:
     - Data is stored in structured tables with predefined schemas.
@@ -68,38 +69,27 @@ SQL (Structured Query Language) is a programming language used to interact with 
 
 ---
 
-### Why Use a Database?
+## What is SQL ?
 
-1. **Data Storage**:
-    - Keep data organized and persistent (saved even after the program ends).
-2. **Data Retrieval**:
-    - Quickly search and filter through data using queries.
-3. **Data Integrity**:
-    - Ensure data is accurate and consistent through rules and relationships.
-4. **Data Sharing**:
-    - Multiple users or applications can access the same data securely.
-5. **Scalability**:
-    - Handle growing amounts of data efficiently.
+### Think in **Tables**
 
----
+- Like Excel sheets: rows & columns.
+- Each row = one record (e.g. a user).
+- Each column = one field (e.g. name, age).
 
-### Simple Analogy:
 
-Think of a database like a digital **filing cabinet**:
+![image.png](/images/dbsql2.png)
 
-- Each drawer is a **table**.
-- Each folder in the drawer is a **row** in the table.
-- Labels on the folders (e.g., "Name," "Age") are the **columns**.
-It keeps everything organized so you can find and use information quickly.
+SQL (Structured Query Language) is a programming language used to interact with databases. In simple terms, it helps you:
 
----
+1. **Store data**: Add new information to a database (e.g., saving user details or product listings).
+2. **Retrieve data**: Get specific information from a database (e.g., finding a user's profile or a list of orders).
+3. **Update data**: Modify existing information in a database (e.g., updating a user’s email address).
+4. **Delete data**: Remove information from a database (e.g., deleting an account or an old record).
+
 
 ![image.png](/images/dbsql3.png)
-
-
 ## **SQL Basics**
-
-### SQL Basics
 
 **SQL (Structured Query Language)** is a language used to interact with databases. It allows you to create, read, update, and delete data in a database. These operations are commonly known as **CRUD** operations.
 
@@ -273,14 +263,6 @@ JOIN Orders ON Users.id = Orders.user_id;
     SELECT name FROM Users;
     ```
     
-    **Output**:
-    
-    ---
-    
-    ---
-    
-    ---
-    
 2. Find users older than 25:
     
     ```sql
@@ -303,15 +285,15 @@ JOIN Orders ON Users.id = Orders.user_id;
 
 ---
 
-### Practice Exercise:
+## Tools We’ll Use Later
 
-1. Create a table `Products` with columns: `id`, `name`, `price`, `quantity`.
-2. Insert three products into the `Products` table.
-3. Retrieve all products with a price greater than $10.
-4. Update the quantity of a product.
-5. Delete a product with a specific `id`.
+| Tool | Use |  
+| --- | --- |
+| SQLite Browser | GUI to view & test SQL |
+| SQLAlchemy | Python ORM to connect Flask to SQL |
+| Flask + SQLite | Our first real web app with a database |
+| Flask + MongoDB | (later) Flask app with a NoSQL backend |
 
----
 ## Navigation
 
 [⬅️ Previous: Flask Route Template Form](flask-route-template-form.md) | [Next: SQLite3 ➡️](sqlite3.md)
