@@ -76,12 +76,14 @@ cd python-for-devops
 | 35 | Python - DB + SQL | [SQLite Browser](modules/python-basics/sqlite-browser.md) |  |  |  |
 | 36 | Python - DB + SQL | [Setting Up Flask with SQLite3](modules/python-basics/flask-sqlite3.md) |  |  |  |
 | 37 | Python - Flask | [REST API](modules/python-basics/rest-api.md) |  |  |  |
-| 38 | Python - Flask |  | [Flask + SQLite To-Do App with NGINX](modules/python-basics/in-module-labs/flask-project-2.md) |   |  |
+| 38 | Python - Flask |  | [Task App](modules/python-basics/in-module-labs/task-flask.md) |  [Flask + SQLite To-Do App with NGINX](modules/python-basics/in-module-labs/flask-project-2.md) |  |
 | 39 | Milestone |  |  | [Flask + Discord](modules/python-basics/in-module-labs/flask-project-3.md)  |  |
-| 40 | Python - DB | [MongoDB with pymongo](modules/python-basics/mongodb.md) |  |   |  |
-| 41 | Python - DB | [Where to save a connection string ?](modules/python-basics/conn-string.md) |  |   |  |
-| 42 | Python - DB | [MongoDB(NoSQL) vs SQL](modules/python-basics/mongo-vs-sql.md) |  |   |  |
-| 43 | Python | [Environment Variables](modules/python-basics/env.md) |  |   |  |
+| 40 | Python | [Environment Variables](modules/python-basics/env.md) |  |   |  |
+| 40 | Python | [Flask + .env](modules/python-basics/flask+env.md) |  |   |  |
+| 41 | Python - DB | [MongoDB with pymongo](modules/python-basics/mongodb.md) |  |   |  |
+| 42 | Python - DB | [Where to save a connection string ?](modules/python-basics/conn-string.md) |  |   |  |
+| 43 | Python - DB | [MongoDB(NoSQL) vs SQL](modules/python-basics/mongo-vs-sql.md) |  |   |  |
+
 
 
 
