@@ -80,9 +80,8 @@ cd python-for-devops
 | 39 | Milestone |  |  | [Flask + Discord](modules/python-basics/in-module-labs/flask-project-3.md)  |  |
 | 40 | Python | [Environment Variables](modules/python-basics/env.md) |  |   |  |
 | 40 | Python | [Flask + .env](modules/python-basics/flask+env.md) |  |   |  |
-| 41 | Python - DB | [MongoDB with pymongo](modules/python-basics/mongodb.md) |  |   |  |
-| 42 | Python - DB | [Where to save a connection string ?](modules/python-basics/conn-string.md) |  |   |  |
-| 43 | Python - DB | [MongoDB(NoSQL) vs SQL](modules/python-basics/mongo-vs-sql.md) |  |   |  |
+| 41 | Python - DB | [MongoDB with Python](modules/python-basics/mongodb.md) | [Lab](modules/python-basics/in-module-labs/mongo.md) |   |  |
+| 42 | Python - DB | [MongoDB(NoSQL) vs SQL](modules/python-basics/mongo-vs-sql.md) |  |   |  |
 
 
 
