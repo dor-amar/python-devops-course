@@ -82,6 +82,11 @@ cd python-for-devops
 | 40 | Python | [Flask + .env](modules/python-basics/flask+env.md) |  |   |  |
 | 41 | Python - DB | [MongoDB with Python](modules/python-basics/mongodb.md) | [Lab](modules/python-basics/in-module-labs/mongo.md) |   |  |
 | 42 | Python - DB | [MongoDB(NoSQL) vs SQL](modules/python-basics/mongo-vs-sql.md) |  |   |  |
+| 43 | Python | [Lambda](modules/python-basics/lambda.md) | [Lab](modules/python-basics/in-module-labs/lambda.md) |   |  |
+| 44 | Python | [Regex](modules/python-basics/regex.md) | [Lab](modules/python-basics/in-module-labs/regex.md) |   |  |
+| 45 | Python | [Yield](modules/python-basics/yield.md) | [Lab](modules/python-basics/in-module-labs/yield.md) |   |  |
+| 46 | Python | [Asynchronous Programming](modules/python-basics/async.md) | [Lab](modules/python-basics/in-module-labs/async.md) |   |  |
+
 
 
 

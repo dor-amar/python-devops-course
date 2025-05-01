@@ -9,6 +9,7 @@ practice/*
 *.docx
 *.ppt
 *.db
+
 # Venv 
 venv/
 **/.venv/
