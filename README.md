@@ -79,13 +79,14 @@ cd python-for-devops
 | 38 | Python - Flask |  | [Task App](modules/python-basics/in-module-labs/task-flask.md) |  [Flask + SQLite To-Do App with NGINX](modules/python-basics/in-module-labs/flask-project-2.md) |  |
 | 39 | Milestone |  |  | [Flask + Discord](modules/python-basics/in-module-labs/flask-project-3.md)  |  |
 | 40 | Python | [Environment Variables](modules/python-basics/env.md) |  |   |  |
-| 40 | Python | [Flask + .env](modules/python-basics/flask+env.md) |  |   |  |
-| 41 | Python - DB | [MongoDB with Python](modules/python-basics/mongodb.md) | [Lab](modules/python-basics/in-module-labs/mongo.md) |   |  |
-| 42 | Python - DB | [MongoDB(NoSQL) vs SQL](modules/python-basics/mongo-vs-sql.md) |  |   |  |
-| 43 | Python | [Lambda](modules/python-basics/lambda.md) | [Lab](modules/python-basics/in-module-labs/lambda.md) |   |  |
-| 44 | Python | [Regex](modules/python-basics/regex.md) | [Lab](modules/python-basics/in-module-labs/regex.md) |   |  |
-| 45 | Python | [Yield](modules/python-basics/yield.md) | [Lab](modules/python-basics/in-module-labs/yield.md) |   |  |
-| 46 | Python | [Asynchronous Programming](modules/python-basics/async.md) | [Lab](modules/python-basics/in-module-labs/async.md) |   |  |
+| 41 | Python | [Flask + .env](modules/python-basics/flask+env.md) |  |   |  |
+| 42 | Python - DB | [MongoDB with Python](modules/python-basics/mongodb.md) | [Lab](modules/python-basics/in-module-labs/mongo.md) |   |  |
+| 43 | Python - DB | [MongoDB(NoSQL) vs SQL](modules/python-basics/mongo-vs-sql.md) |  |   |  |
+| 44 | Python | [Lambda](modules/python-basics/lambda.md) | [Lab](modules/python-basics/in-module-labs/lambda.md) |   |  |
+| 45 | Python | [Regex](modules/python-basics/regex.md) | [Lab](modules/python-basics/in-module-labs/regex.md) |   |  |
+| 46 | Python | [Yield](modules/python-basics/yield.md) | [Lab](modules/python-basics/in-module-labs/yield.md) |   |  |
+| 47 | Python | [Asynchronous Programming](modules/python-basics/async.md) | [Lab](modules/python-basics/in-module-labs/async.md) |   |  |
+| 48 | Last Project-Lab and Reflections | | [Lab](challenges/local_llm_chat/) |   |  |
 
 
 
