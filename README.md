@@ -86,7 +86,7 @@ cd python-for-devops
 | 45 | Python | [Regex](modules/python-basics/regex.md) | [Lab](modules/python-basics/in-module-labs/regex.md) |   |  |
 | 46 | Python | [Yield](modules/python-basics/yield.md) | [Lab](modules/python-basics/in-module-labs/yield.md) |   |  |
 | 47 | Python | [Asynchronous Programming](modules/python-basics/async.md) | [Lab](modules/python-basics/in-module-labs/async.md) |   |  |
-| 48 | Last Project-Lab and Reflections | | [Lab](challenges/local_llm_chat/) |   |  |
+| 48 | A Last Challenge - If you choose to accept it | | [Lab](challenges/local_llm_chat/README.md) |   |  |
 
 
 

@@ -16,3 +16,15 @@ venv/
 
 # Scripts
 scripts/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+
+# Project Answers
+challenges/local_llm_chat/*.py
+
