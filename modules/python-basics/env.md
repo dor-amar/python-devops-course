@@ -62,10 +62,10 @@ database_url = os.environ["DATABASE_URL"]  # Raises KeyError if not found
 
 ## **Real-World Example: Secure Database Connection**
 
-Imagine you have a Python app using PostgreSQL. Instead of this:
+Imagine you have a Python app using Mongo. Instead of this:
 
 ```python
-DATABASE_URL = "postgres://admin:1234@localhost:5432/mydb"
+DATABASE_URL="mongodb+srv://doramar5555:AQqXIeuYSzDiYrqr@cluster0.ix22vtr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 ```
 
 You should do this:
@@ -73,17 +73,17 @@ You should do this:
 ### 1. Set the environment variable:
 
 ```bash
-export DATABASE_URL="postgres://admin:1234@localhost:5432/mydb"
+export DATABASE_URL="mongodb+srv://doramar5555:AQqXIeuYSzDiYrqr@cluster0.ix22vtr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 ```
 
 ### 2. Access it in Python:
 
 ```python
-import os
-import psycopg2
-
-db_url = os.getenv("DATABASE_URL")
-connection = psycopg2.connect(db_url)
+def db_init():
+    client = MongoClient(DATABASE_URL)
+    db = client.student_bot
+    collection = db.knowledge_base
+    return collection
 ```
 
 ---
