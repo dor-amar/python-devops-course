@@ -79,11 +79,19 @@ export DATABASE_URL="mongodb+srv://doramar5555:AQqXIeuYSzDiYrqr@cluster0.ix22vtr
 ### 2. Access it in Python:
 
 ```python
+
+from pymongo import MongoClient
+import os
+
+DATABASE_URL=os.getenv("DATABASE_URL")
+
 def db_init():
     client = MongoClient(DATABASE_URL)
     db = client.student_bot
     collection = db.knowledge_base
     return collection
+
+print(db_init())
 ```
 
 ---
@@ -116,7 +124,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()  # Automatically reads .env and sets os.environ
-print(os.getenv("API_KEY"))
+print(os.getenv("ENVIRONMENT"))
 
 ```
 
@@ -182,6 +190,9 @@ app.config["SECRET_KEY"] = os.getenv("SECRET_KEY", "fallback-secret")
 @app.route("/")
 def hello():
     return "Secret Key: " + app.config["SECRET_KEY"]
+
+if __name__ == "__main__":
+    app.run(debug=True)
 ```
 
 Use a `.env` like:

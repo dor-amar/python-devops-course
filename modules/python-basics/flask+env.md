@@ -1,4 +1,3 @@
----
 
 # Lecture Goals
 
@@ -130,18 +129,34 @@ Example (`app.py`):
 
 ```python
 import sqlite3
-from flask import Flask, g
+from flask import Flask
 from dotenv import load_dotenv
 import os
 
 load_dotenv()
 
 app = Flask(__name__)
+DB_PATH = os.getenv('DATABASE_URL')
+print("DB will be created/accessed at:", DB_PATH)
 
-DATABASE_URL = os.getenv('DATABASE_URL')
+def init_db():
+    # This will create the DB and the tasks table if they don't exist
+    conn = sqlite3.connect(DB_PATH)
+    conn.execute('''
+        CREATE TABLE IF NOT EXISTS tasks (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            title TEXT NOT NULL
+        );
+    ''')
+    # Optional: Add one sample task
+    count = conn.execute("SELECT COUNT(*) FROM tasks").fetchone()[0]
+    if count == 0:
+        conn.execute("INSERT INTO tasks (title) VALUES ('Sample Task')")
+    conn.commit()
+    conn.close()
 
 def get_db_connection():
-    conn = sqlite3.connect(DATABASE_URL.replace('sqlite:///', ''))  # small trick
+    conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn
 
@@ -153,7 +168,9 @@ def index():
     return {'tasks': [dict(row) for row in tasks]}
 
 if __name__ == '__main__':
+    init_db()  # ✅ Automatically creates the file and table
     app.run(debug=True)
+
 ```
 
 ---
