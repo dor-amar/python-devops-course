@@ -15,8 +15,8 @@ Create a function that validates email addresses. The function should:
 - Return True if the email is valid, False otherwise
 - Consider the following rules:
   - Must contain @ symbol
-  - Username can contain letters, numbers, dots, and hyphens
-  - Domain must contain letters, numbers, dots, and hyphens
+  - Username can contain letters, numbers, dots.
+  - Domain must contain letters, numbers, dots.
   - Must end with a valid domain extension (2-4 characters)
 
 ```python
@@ -154,4 +154,3 @@ newlines
 ## Resources
 - [Python re module documentation](https://docs.python.org/3/library/re.html)
 - [Regex101 - Online regex tester](https://regex101.com/)
-- [Regular Expressions Cookbook](https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/)
