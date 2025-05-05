@@ -50,7 +50,6 @@ AI: A generator is a function that uses 'yield' to return values one at a time.
 A decorator typically takes in one argument: the function it's supposed to decorate (also known as the **target**). The decorator returns a new function that "calls back" into the target function. This allows the decorator to modify or extend the behavior of the target function before, after, or instead of its original execution.
 
 Here is an example:
-```
 def my_decorator(func):
     def wrapper():
         print("Something is happening before the function is called.")
@@ -72,7 +71,6 @@ Save this answer to MongoDB? (y/n): y
 A decorator typically takes in one argument: the function it's supposed to decorate (also known as the **target**). The decorator returns a new function that "calls back" into the target function. This allows the decorator to modify or extend the behavior of the target function before, after, or instead of its original execution.
 
 Here is an example:
-```
 def my_decorator(func):
     def wrapper():
         print("Something is happening before the function is called.")
