@@ -20,57 +20,34 @@ Create lambda functions for the following operations:
 2. A function that adds two numbers
 3. A function that checks if a number is even
 
-```python
-# Example solution
-square = lambda x: x ** 2
-print(square(5))  # Output: 25
-```
 
 ## Exercise 2: Using Lambda with map()
+### In Python, map() is a built-in function used to apply another function to every item in an iterable (like a list). https://www.geeksforgeeks.org/python-map-function/
 Use lambda functions with `map()` to:
 
 1. Convert a list of temperatures from Celsius to Fahrenheit
 2. Capitalize all strings in a list
 3. Calculate the length of each string in a list
 
-```python
-# Example solution
-temperatures_c = [0, 10, 20, 30, 40]
-temperatures_f = list(map(lambda c: (c * 9/5) + 32, temperatures_c))
-print(temperatures_f)  # Output: [32.0, 50.0, 68.0, 86.0, 104.0]
-```
 
 ## Exercise 3: Using Lambda with filter()
+### filter() is used to filter items from an iterable based on a condition. It keeps only the items for which the function returns True. https://www.w3schools.com/python/ref_func_filter.asp
 Use lambda functions with `filter()` to:
 
 1. Filter out even numbers from a list
 2. Filter out strings that start with a vowel
 3. Filter out negative numbers from a list
 
-```python
-# Example solution
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-odd_numbers = list(filter(lambda x: x % 2 != 0, numbers))
-print(odd_numbers)  # Output: [1, 3, 5, 7, 9]
-```
 
 ## Exercise 4: Using Lambda with sorted()
+### sorted() is a built-in function that returns a new sorted list from the items of any iterable (like lists, tuples, or dictionaries), without changing the original. https://www.w3schools.com/python/ref_func_sorted.asp
 Use lambda functions with `sorted()` to:
 
 1. Sort a list of tuples by the second element
 2. Sort a list of strings by their length
 3. Sort a list of dictionaries by a specific key
 
-```python
-# Example solution
-students = [
-    {'name': 'Alice', 'grade': 85},
-    {'name': 'Bob', 'grade': 92},
-    {'name': 'Charlie', 'grade': 78}
-]
-sorted_students = sorted(students, key=lambda x: x['grade'], reverse=True)
-print(sorted_students)
-```
+
 
 ## Challenge Exercise
 Create a lambda function that:
